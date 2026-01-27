@@ -8,8 +8,8 @@ export const Home = () => {
     <>
       <section className="w-full py-4 flex flex-col items-center overflow-hidden">
         <h1 className={clsx(
-          "w-full text-center uppercase font-fredoka leading-none tracking-tighter",
-          "text-[clamp(2rem,12vw,12rem)] md:text-[clamp(5rem,10vw,12rem)]",
+          "w-full text-center uppercase font-fredoka font-bold leading-none tracking-tight",
+          "text-[clamp(2rem,11vw,12rem)] md:text-[clamp(5rem,10vw,11rem)]",
           "text-transparent bg-clip-text bg-linear-to-b from-slate-900 to-slate-600",
           "selection:bg-indigo-100 selection:text-indigo-900",
         )}>

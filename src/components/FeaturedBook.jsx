@@ -1,14 +1,22 @@
+import { motion } from 'framer-motion';
+
 export const FeaturedBook = () => {
   return (
     <section className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto px-6">
       
       {/* LEFT: The Book Cover with a subtle Shadow/Lift */}
       <div className="flex justify-center md:justify-end animate-fade-in-up">
-        <img 
-          src="/avajonescover.webp" 
-          alt="Book Title Cover" 
-          className="w-64 md:w-80 rounded-lg shadow-2xl transition-transform duration-500 hover:scale-105"
-        />
+        <motion.div 
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+        >
+          <img 
+            src="/avajonescover.webp" 
+            alt="Ava Jones: The End And The Beginning" 
+            className="w-64 md:w-80 rounded-lg shadow-2xl transition-transform duration-500 hover:scale-105"
+          />
+        </motion.div>
       </div>
 
       {/* RIGHT: Details & Social Proof */}

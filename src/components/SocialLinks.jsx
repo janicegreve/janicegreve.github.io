@@ -1,18 +1,4 @@
-import {
-  SiTiktok,
-  SiInstagram,
-  SiFacebook,
-  SiYoutube,
-  SiGoodreads,
-} from '@icons-pack/react-simple-icons';
-
-const socials = [
-  { name: 'TikTok', href: 'https://www.tiktok.com/@janicegreve.author', icon: SiTiktok },
-  { name: 'Instagram', href: 'https://www.instagram.com/grevejanice', icon: SiInstagram },
-  { name: 'Facebook', href: 'https://www.facebook.com/Author.J.Greve', icon: SiFacebook },
-  { name: 'Youtube', href: 'https://www.youtube.com/@janicegreveauthor', icon: SiYoutube },
-  { name: 'Goodreads', href: 'https://www.goodreads.com/author/show/64240941.Janice_Greve', icon: SiGoodreads },
-];
+import { socials } from "../utilities/socials";
 
 export default function SocialLinks({ size = 24, iconColor = 'default' }) {
   return (
