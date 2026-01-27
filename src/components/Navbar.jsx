@@ -8,12 +8,15 @@ export const Navbar = () => {
   const location = useLocation();
 
   useEffect(() => {
-    if (isOpen) {
-      setIsOpen(false);
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isOpen]);
+
+  useEffect(() => {
+    setIsOpen(false);
   }, [location]);
 
   const getNavLinkClass = ({ isActive }) => isActive ? "text-indigo-600 font-bold" : "text-slate-600"
