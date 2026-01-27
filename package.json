@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/chewy": "^5.2.7",
+    "@fontsource/fredoka": "^5.2.10",
     "@headlessui/react": "^2.2.9",
     "@icons-pack/react-simple-icons": "^13.8.0",
     "@tailwindcss/vite": "^4.1.18",

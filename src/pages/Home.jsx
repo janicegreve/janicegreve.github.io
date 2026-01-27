@@ -1,20 +1,18 @@
+import { FeaturedBook } from "../components/FeaturedBook";
 import SocialLinks from "../components/SocialLinks"
+import clsx from 'clsx';
 
 export const Home = () => {
 
   return (
     <>
       <section className="w-full py-4 flex flex-col items-center overflow-hidden">
-        {/* 
-          - leading-none: removes extra space above/below letters 
-          - tracking-tighter: creates that modern editorial "compact" look
-          - whitespace-nowrap: prevents the name from breaking into two lines
-        */}
-        <h1 className="
-          w-full text-center uppercase font-serif font-bold leading-none tracking-tighter
-          text-[12vw] lg:text-[14vw] 
-          text-slate-900 selection:bg-indigo-100
-        ">
+        <h1 className={clsx(
+          "w-full text-center uppercase font-fredoka leading-none tracking-tighter",
+          "text-[clamp(2rem,12vw,12rem)] md:text-[clamp(5rem,10vw,12rem)]",
+          "text-transparent bg-clip-text bg-linear-to-b from-slate-900 to-slate-600",
+          "selection:bg-indigo-100 selection:text-indigo-900",
+        )}>
           Janice Greve
         </h1>
 
@@ -27,6 +25,9 @@ export const Home = () => {
         <SocialLinks size={16} />
       </div>
 
+      <div>
+        <FeaturedBook />
+      </div>
       <div className="font-sans flex items-center justify-center m-0 mt-20">
         <div className="bg-white p-8 rounded-lg shadow-md text-center max-w-sm mx-4">
           <div className="text-5xl mb-4">🚧</div>

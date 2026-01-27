@@ -1,0 +1,39 @@
+export const FeaturedBook = () => {
+  return (
+    <section className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto px-6">
+      
+      {/* LEFT: The Book Cover with a subtle Shadow/Lift */}
+      <div className="flex justify-center md:justify-end animate-fade-in-up">
+        <img 
+          src="/avajonescover.webp" 
+          alt="Book Title Cover" 
+          className="w-64 md:w-80 rounded-lg shadow-2xl transition-transform duration-500 hover:scale-105"
+        />
+      </div>
+
+      {/* RIGHT: Details & Social Proof */}
+      <div className="flex flex-col space-y-6 text-center md:text-left">
+        <div>
+          <span className="text-indigo-600 font-bold uppercase tracking-widest text-xs">Latest Release</span>
+          <h2 className="text-xl font-chewy mt-2">Ava Jones: The End And The Beginning</h2>
+          <p className="text-xl text-slate-600 mt-4 leading-relaxed font-light italic">
+            A young Welsh woman moves to Denmark for love. A tale of escape, love, loss, and new beginnings.
+          </p>
+        </div>
+
+        {/* Quoted Reviews */}
+        <div className="space-y-4 border-l-2 border-indigo-100 pl-6 italic text-slate-500">
+          <p className="text-sm">"Ava Jones is like a warm hug from beginning to end." — <span className="font-bold">Amazon Review</span></p>
+          <p className="text-sm">"Wonderful well rounded story that leaves a lovely sweet feeling" — <span className="font-bold">Thea Meadows</span></p>
+        </div>
+
+        {/* Call to Action */}
+        <div className="pt-4">
+          <button className="bg-slate-900 text-white px-8 py-3 rounded-full font-fredoka hover:bg-indigo-600 transition-colors">
+            Get the Book
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+}
