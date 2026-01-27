@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { NavLink, useLocation } from "react-router";
-import { Transition } from '@headlessui/react'
+import { motion, AnimatePresence } from 'framer-motion';
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,42 +8,43 @@ export const Navbar = () => {
 
   useEffect(() => {
     if (isOpen) {
+      setIsOpen(false);
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = 'unset';
     }
-
-    setIsOpen(false);
   }, [location]);
 
   const getNavLinkClass = ({ isActive }) => isActive ? "text-indigo-600 font-bold" : "text-slate-600"
 
   return (
-    <nav className="flex items-center justify-center">
+    <nav className="flex flex-col items-center py-4 w-full">
       {/* MOBILE: Shows "Navbar" text or icon only on small screens */}
       <div className="block md:hidden">
         <button
-          className="uppercase"
+          className="uppercase tracking-widest px-4 py-2"
           onClick={() => setIsOpen(! isOpen)}
         >
           {isOpen ? 'Close' : 'Menu'}
         </button>
 
-        <Transition
-          show={isOpen}
-          enter="transition duration-200 ease-out"
-          enterFrom="transform scale-95 opacity-0"
-          enterTo="transform scale-100 opacity-100"
-          leave="transition duration-150 ease-in"
-          leaveFrom="transform scale-100 opacity-100"
-          leaveTo="transform scale-95 opacity-0"
-        >
-          <div className="flex flex-col space-y-2 p-4 md:hidden uppercase">
-            <NavLink to="/" className={getNavLinkClass}>Welcome</NavLink>
-            <NavLink to="/books" className={getNavLinkClass}>Books</NavLink>
-            <NavLink to="/about" className={getNavLinkClass}>About</NavLink>
-          </div>
-        </Transition>
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.2, ease: "easeOut" }}
+
+              className="top-16 w-full bg-white/90 backdrop-blur-sm"
+            >
+              <div className="flex flex-col items-center space-y-6 py-10 uppercase tracking-widest text-sm">
+                <NavLink to="/" className={getNavLinkClass}>Welcome</NavLink>
+                <NavLink to="/books" className={getNavLinkClass}>Books</NavLink>
+                <NavLink to="/about" className={getNavLinkClass}>About</NavLink>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
 
       {/* DESKTOP: Shows all links only on medium screens and up */}
