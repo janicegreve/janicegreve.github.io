@@ -19,14 +19,14 @@ export const Navbar = () => {
   const getNavLinkClass = ({ isActive }) => isActive ? "text-indigo-600 font-bold" : "text-slate-600"
 
   return (
-    <nav className="flex items-center">
+    <nav className="flex items-center justify-center">
       {/* MOBILE: Shows "Navbar" text or icon only on small screens */}
       <div className="block md:hidden">
         <button
           className="uppercase"
           onClick={() => setIsOpen(! isOpen)}
         >
-          Menu
+          {isOpen ? 'Close' : 'Menu'}
         </button>
 
         <Transition
