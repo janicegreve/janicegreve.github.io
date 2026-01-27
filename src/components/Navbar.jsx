@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { NavLink, useLocation } from "react-router";
 import { Transition } from '@headlessui/react'
 
-export const Menu = () => {
+export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
@@ -20,7 +20,7 @@ export const Menu = () => {
 
   return (
     <nav className="flex items-center">
-      {/* MOBILE: Shows "Menu" text or icon only on small screens */}
+      {/* MOBILE: Shows "Navbar" text or icon only on small screens */}
       <div className="block md:hidden">
         <button
           className="uppercase"
@@ -47,7 +47,7 @@ export const Menu = () => {
       </div>
 
       {/* DESKTOP: Shows all links only on medium screens and up */}
-      <div className="hidden md:flex space-x-4">
+      <div className="hidden md:flex space-x-4 uppercase">
         <NavLink to="/" className={getNavLinkClass}>Welcome</NavLink>
         <NavLink to="/books" className={getNavLinkClass}>Books</NavLink>
         <NavLink to="/about" className={getNavLinkClass}>About</NavLink>
