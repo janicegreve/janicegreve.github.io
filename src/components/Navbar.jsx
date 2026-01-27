@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { NavLink, useLocation } from "react-router";
 import { motion, AnimatePresence } from 'framer-motion';
+import { Menu, X } from 'lucide-react';
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,12 +22,16 @@ export const Navbar = () => {
     <nav className="flex flex-col items-center py-4 w-full">
       {/* MOBILE: Shows "Navbar" text or icon only on small screens */}
       <div className="block md:hidden">
-        <button
-          className="uppercase tracking-widest px-4 py-2"
-          onClick={() => setIsOpen(! isOpen)}
-        >
-          {isOpen ? 'Close' : 'Menu'}
-        </button>
+        <div className='flex flex-row items-center'>
+          {isOpen || <Menu size={16} />}
+          {isOpen && <X size={16} />}
+          <button
+            className="uppercase tracking-widest ml-2 py-2"
+            onClick={() => setIsOpen(! isOpen)}
+          >
+            {isOpen ? 'Close' : 'Menu'}
+          </button>
+        </div>
 
         <AnimatePresence>
           {isOpen && (
@@ -35,9 +40,9 @@ export const Navbar = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.2, ease: "easeOut" }}
 
-              className="top-16 w-full bg-white/90 backdrop-blur-sm"
+              className="top-16 w-full"
             >
-              <div className="flex flex-col items-center space-y-6 py-10 uppercase tracking-widest text-sm">
+              <div className="flex flex-col items-center space-y-2 py-2 uppercase tracking-widest text-sm">
                 <NavLink to="/" className={getNavLinkClass}>Welcome</NavLink>
                 <NavLink to="/books" className={getNavLinkClass}>Books</NavLink>
                 <NavLink to="/about" className={getNavLinkClass}>About</NavLink>

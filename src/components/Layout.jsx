@@ -9,13 +9,14 @@ export const Layout = () => {
     // <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900 selection:bg-indigo-100">
     <div className={clsx(
       "min-h-screen flex flex-col text-slate-900 selection:bg-indigo-100",
-      "bg-linear-to-br from-white via-slate-50 to-indigo-50",
+      "bg-orange-100",
+      // "bg-linear-to-br from-white via-slate-50 to-indigo-50",
       // "bg-[url('/path-to-texture.png')] bg-repeat"
     )}>
       <Header />
 
       {/* Main content grows to fill space */}
-      <main className="grow container mx-auto px-4 py-8">
+      <main className="grow container mx-auto px-4 py-4">
         <Outlet />
       </main>
 
