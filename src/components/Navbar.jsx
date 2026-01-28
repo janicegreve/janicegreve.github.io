@@ -48,6 +48,7 @@ export const Navbar = () => {
               <div className="flex flex-col items-center space-y-2 py-2 uppercase tracking-widest text-sm">
                 <NavLink to="/" className={getNavLinkClass}>Welcome</NavLink>
                 <NavLink to="/books" className={getNavLinkClass}>Books</NavLink>
+                <NavLink to="/blog" className={getNavLinkClass}>Blog</NavLink>
                 <NavLink to="/about" className={getNavLinkClass}>About</NavLink>
               </div>
             </motion.div>
@@ -59,6 +60,7 @@ export const Navbar = () => {
       <div className="hidden md:flex space-x-4 uppercase">
         <NavLink to="/" className={getNavLinkClass}>Welcome</NavLink>
         <NavLink to="/books" className={getNavLinkClass}>Books</NavLink>
+        <NavLink to="/blog" className={getNavLinkClass}>Blog</NavLink>
         <NavLink to="/about" className={getNavLinkClass}>About</NavLink>
       </div>
     </nav>

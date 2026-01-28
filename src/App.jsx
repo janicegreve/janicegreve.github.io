@@ -4,6 +4,8 @@ import { Home } from './pages/Home.jsx';
 import { About } from './pages/About.jsx';
 import { Books } from './pages/Books.jsx';
 import { Layout } from './components/Layout.jsx';
+import { Blog } from './pages/Blog';
+import { PostDetails } from './pages/PostDetails';
 
 export default function ScrollToTop() {
   const { pathname } = useLocation();
@@ -21,6 +23,8 @@ export const App = () => {
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/books" element={<Books />} />
+          <Route path="blog" element={<Blog />} />
+          <Route path="blog/:slug" element={<PostDetails />} />
         </Route>
       </Routes>
     </Router>

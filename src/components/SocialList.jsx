@@ -1,4 +1,4 @@
-import { socials } from "../utilities/socials";
+import { socials } from "../utils/socials";
 
 export const SocialList = () => {
   return (

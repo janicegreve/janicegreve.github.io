@@ -1,4 +1,4 @@
-import { socials } from "../utilities/socials";
+import { socials } from "../utils/socials";
 
 export default function SocialLinks({ size = 24, iconColor = 'default' }) {
   return (
