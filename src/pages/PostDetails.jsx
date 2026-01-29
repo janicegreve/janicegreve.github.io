@@ -19,8 +19,11 @@ export const PostDetails = () => {
       </Link>
       
       <header className="mt-8 mb-12">
-        <h1 className="text-5xl font-chewy text-slate-900">{post.title}</h1>
-        <p className="text-slate-400 mt-4 font-fredoka">{post.date}</p>
+        <h1 className="text-4xl text-slate-900">{post.title}</h1>
+        <p className="text-slate-400 mt-4">{post.date}</p>
+        <span className="text-xs uppercase tracking-widest text-indigo-500 font-bold">
+          {post.tags?.join(", ") || 'Article'}
+        </span>
       </header>
 
       {/* 
@@ -29,7 +32,7 @@ export const PostDetails = () => {
           We use Tailwind's 'prose' class to style the raw HTML tags automatically.
       */}
       <div 
-        className="prose prose-lg prose-indigo max-w-none font-fredoka text-slate-700"
+        className="prose prose-lg md:prose-xl max-w-none"
         dangerouslySetInnerHTML={{ __html: post.content }} 
       />
     </article>

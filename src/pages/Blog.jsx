@@ -6,8 +6,8 @@ export const Blog = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="max-w-4xl mx-auto py-12 px-6">
-      <h1 className="text-5xl font-chewy mb-12 text-center">Author Journal</h1>
+    <div className="max-w-4xl mx-auto py-6 px-6">
+      <h1 className="text-5xl mb-12 text-center">Janice's Blog</h1>
       
       <div className="grid gap-8">
         {blogPosts.map((post) => (
@@ -19,25 +19,25 @@ export const Blog = () => {
             className="
               group cursor-pointer p-8 
               bg-white border border-slate-100 rounded-2xl shadow-sm
-              transition-colors hover:bg-slate-50/50
+              transition-colors hover:bg-slate-50/80
               relative flex flex-col space-y-4
             "
           >
             {/* Metadata Bar */}
             <div className="flex items-center justify-between">
+              <p className="text-slate-400 text-sm">{post.date}</p>
               <span className="text-xs uppercase tracking-widest text-indigo-500 font-bold">
                 {post.tags?.[0] || 'Article'}
               </span>
-              <p className="text-slate-400 text-sm font-fredoka">{post.date}</p>
             </div>
 
             {/* Title */}
-            <h2 className="text-3xl font-fredoka text-slate-900 group-hover:text-indigo-600 transition-colors">
+            <h2 className="text-3xl text-slate-900 group-hover:text-indigo-600 transition-colors">
               {post.title}
             </h2>
 
             {/* Excerpt */}
-            <p className="text-slate-600 leading-relaxed font-fredoka line-clamp-3">
+            <p className="text-slate-600 leading-relaxed line-clamp-3">
               {post.excerpt}
             </p>
 

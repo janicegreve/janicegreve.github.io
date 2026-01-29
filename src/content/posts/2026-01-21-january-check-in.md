@@ -2,7 +2,7 @@
 title: January check-in
 date: 2026-01-21
 author: Janice Greve
-tags: [writing, publishing]
+tags: [writing, editing]
 excerpt: My first book is out and a look at the next novel.
 ---
 

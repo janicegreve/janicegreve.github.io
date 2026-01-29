@@ -1,4 +1,4 @@
-import SocialLinks from "./SocialLinks";
+import { SocialLinks } from "./SocialLinks";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();

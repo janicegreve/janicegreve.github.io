@@ -1,7 +1,19 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+@import "@fontsource/lora/400.css";
+@import "@fontsource/lora/400-italic.css";
+@import "@fontsource/lora/700.css";
+@import "@fontsource/lora/700-italic.css";
+@import "@fontsource/fredoka/400.css";
+@import "@fontsource/fredoka/700.css";
+@import "@fontsource/chewy/400.css";
 
 @theme {
-  --font-fredoka: "Fredoka", "sans-serif";
-  --font-chewy: "Chewy", "sans-serif";
+  --font-sans: "Lora", serif;
+  --font-serif: "Lora", serif;
+  
+  --font-fredoka: "Fredoka", sans-serif;
+  --font-chewy: "Chewy", display;
+
+  --typography-body-font-family: var(--font-sans);
 }

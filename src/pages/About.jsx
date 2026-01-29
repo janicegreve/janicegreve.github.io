@@ -18,7 +18,7 @@ export const About = () => {
           </div>
           
           <div className="mt-8 hidden md:block">
-            <h3 className="font-chewy text-xl mb-4">Find me online</h3>
+            <h3 className="text-2xl mb-4">Let's Connect</h3>
             <SocialList />
           </div>
         </div>
@@ -26,13 +26,13 @@ export const About = () => {
         {/* RIGHT: Bio Content */}
         <div className="md:col-span-7 space-y-8">
           <header>
-            <h1 className="text-5xl font-chewy text-slate-900">About the Author</h1>
-            <p className="text-indigo-600 font-fredoka uppercase tracking-widest mt-2">
-              Bestselling Author & World Builder
+            <h1 className="text-center text-5xl text-slate-900">About Janice</h1>
+            <p className="text-center text-indigo-600 font-fredoka uppercase tracking-widest mt-2">
+              Author & World Builder
             </p>
           </header>
 
-          <div className="prose prose-slate prose-lg font-fredoka text-slate-600 leading-relaxed text-justify">
+          <div className="prose prose-slate prose-lg text-slate-600 leading-relaxed text-justify">
             <p>
               Janice Greve was born in London; she is married with four adult children. Today she and her husband live in Aalborg, Denmark. Janice enjoys writing, reading, walks by the fjord, and is often on Bluesky participating in a 7th century world where she is a Viking baker with a longboat!
             </p>
@@ -43,7 +43,7 @@ export const About = () => {
 
           {/* Socials again for Mobile View */}
           <div className="md:hidden pt-8 border-t border-slate-100">
-            <h3 className="font-chewy text-xl mb-6">Let's Connect</h3>
+            <h3 className="text-2xl mb-6">Let's Connect</h3>
             <SocialList />
           </div>
         </div>

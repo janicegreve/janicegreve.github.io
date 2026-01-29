@@ -1,6 +1,6 @@
 import { socials } from "../utils/socials";
 
-export default function SocialLinks({ size = 24, iconColor = 'default' }) {
+export const SocialLinks = ({ size = 24, iconColor = 'default' }) => {
   return (
     <div className="flex items-center justify-center gap-6 w-full">
       {socials.map((social) => {
