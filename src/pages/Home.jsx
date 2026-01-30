@@ -2,7 +2,6 @@ import clsx from 'clsx';
 import { FeaturedBook } from "../components/FeaturedBook";
 import { SocialLinks } from "../components/SocialLinks"
 import { UnderConstruction } from "../components/UnderConstruction";
-import { NewsletterSection } from '../components/NewsletterSection';
 
 export const Home = () => {
 
@@ -18,7 +17,7 @@ export const Home = () => {
           Janice Greve
         </h1>
 
-        <p className="mt-4 text-slate-500 uppercase tracking-[0.5em] text-sm md:text-base">
+        <p className="text-center mt-4 text-slate-500 uppercase tracking-[0.5em] text-sm md:text-base">
           Indie Author & Storyteller
         </p>
       </section>
@@ -30,8 +29,6 @@ export const Home = () => {
       <div>
         <FeaturedBook />
       </div>
-
-      <NewsletterSection />
 
       <UnderConstruction />
     </>

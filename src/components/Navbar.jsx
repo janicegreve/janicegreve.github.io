@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
-import { NavLink, useLocation } from "react-router";
+import { useLocation } from "react-router";
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import { NavLinks } from '../utils/NavLinks';
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,8 +19,6 @@ export const Navbar = () => {
   useEffect(() => {
     setIsOpen(false);
   }, [location]);
-
-  const getNavLinkClass = ({ isActive }) => isActive ? "text-indigo-600 font-bold" : "text-slate-600"
 
   return (
     <nav className="flex flex-col items-center py-4 w-full">
@@ -46,10 +45,7 @@ export const Navbar = () => {
               className="top-16 w-full"
             >
               <div className="flex flex-col items-center space-y-2 py-2 uppercase tracking-widest text-sm">
-                <NavLink to="/" className={getNavLinkClass}>Welcome</NavLink>
-                <NavLink to="/books" className={getNavLinkClass}>Books</NavLink>
-                <NavLink to="/blog" className={getNavLinkClass}>Blog</NavLink>
-                <NavLink to="/about" className={getNavLinkClass}>About</NavLink>
+                <NavLinks />
               </div>
             </motion.div>
           )}
@@ -58,10 +54,7 @@ export const Navbar = () => {
 
       {/* DESKTOP: Shows all links only on medium screens and up */}
       <div className="hidden md:flex space-x-4 uppercase">
-        <NavLink to="/" className={getNavLinkClass}>Welcome</NavLink>
-        <NavLink to="/books" className={getNavLinkClass}>Books</NavLink>
-        <NavLink to="/blog" className={getNavLinkClass}>Blog</NavLink>
-        <NavLink to="/about" className={getNavLinkClass}>About</NavLink>
+        <NavLinks />
       </div>
     </nav>
   )
