@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 export const FeaturedBook = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto px-6">
       
@@ -22,7 +25,7 @@ export const FeaturedBook = () => {
       {/* RIGHT: Details & Social Proof */}
       <div className="flex flex-col space-y-6 text-center md:text-left">
         <div>
-          <span className="text-indigo-600 font-bold uppercase tracking-widest text-xs">Latest Release</span>
+          <span className="text-indigo-600 font-bold uppercase tracking-widest text-xs">{t('featured-book.latest')}</span>
           <h2 className="text-xl font-chewy mt-2">Ava Jones: The End And The Beginning</h2>
           <p className="text-xl text-slate-600 mt-4 leading-relaxed font-light italic">
             A young Welsh woman moves to Denmark for love. A tale of escape, love, loss, and new beginnings.

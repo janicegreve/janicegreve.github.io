@@ -2,9 +2,10 @@
   "nav": {
     "home": "Welcome",
     "books": "Books",
-    "blog": "Journal",
+    "blog": "Blog",
     "newsletter": "Newsletter",
-    "about": "About"
+    "about": "About",
+    "close": "Close"
   },
   "home": {
     "about": "Indie Author & Storyteller"
@@ -16,7 +17,8 @@
     "read": "Read Entry"
   },
   "blog-details": {
-    "not-found": "Post not found."
+    "not-found": "Post not found.",
+    "back": "Back to Blog"
   },
   "newsletter": {
   },
@@ -29,5 +31,8 @@
   },
   "footer": {
     "legal": "All rights reserved."
+  },
+  "featured-book": {
+    "latest": "Latest Release"
   }
 }

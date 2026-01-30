@@ -2,7 +2,7 @@
 title: Januar check-in
 date: 2026-01-21
 author: Janice Greve
-tags: [writing, editing]
+tags: [skrivning, redigering]
 excerpt: Min første bog er ude, og jeg er i gang med den næste.
 ---
 

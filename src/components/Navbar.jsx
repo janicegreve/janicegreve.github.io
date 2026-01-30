@@ -2,12 +2,14 @@ import { useState, useEffect } from 'react';
 import { useLocation } from "react-router";
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { NavLinks } from '../utils/NavLinks';
 import { LanguageSwitcher } from './LanguageSwitcher';
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const { t } = useTranslation();
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? 'hidden' : '';
@@ -33,7 +35,7 @@ export const Navbar = () => {
               className="uppercase tracking-widest ml-2 py-2"
               onClick={() => setIsOpen(! isOpen)}
             >
-              {isOpen ? 'Close' : 'Menu'}
+              {isOpen ? t('nav.close') : 'Menu'}
             </button>
           </div>
 

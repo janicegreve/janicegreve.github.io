@@ -4,7 +4,8 @@
     "books": "Bøger",
     "blog": "Journal",
     "newsletter": "Nyhedsbrev",
-    "about": "Om Janice"
+    "about": "Om Janice",
+    "close": "Luk"
   },
   "home": {
     "about": "Indieforfatter og historiefortæller"
@@ -16,7 +17,8 @@
     "read": "Læs indhold"
   },
   "blog-details": {
-    "not-found": "Indhold ikke fundet."
+    "not-found": "Indhold ikke fundet.",
+    "back": "Tilbage til Journal"
   },
   "newsletter": {
   },
@@ -29,5 +31,8 @@
   },
   "footer": {
     "legal": "Alle rettigheder forbeholdes."
+  },
+  "featured-book": {
+    "latest": "Seneste udgivelse"
   }
 }

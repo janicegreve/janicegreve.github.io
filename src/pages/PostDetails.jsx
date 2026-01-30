@@ -16,8 +16,8 @@ export const PostDetails = () => {
 
   return (
     <article className="max-w-3xl mx-auto py-12 px-6 animate-fade-in-up">
-      <Link to="/blog" className="text-indigo-600 hover:underline text-sm uppercase tracking-widest">
-        ← Back to Blog
+      <Link to={`/${lang}/blog`} className="text-indigo-600 hover:underline text-sm uppercase tracking-widest">
+        ← {t('blog-details.back')}
       </Link>
       
       <header className="mt-8 mb-12">
