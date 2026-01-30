@@ -1,0 +1,33 @@
+{
+  "nav": {
+    "home": "Welcome",
+    "books": "Books",
+    "blog": "Journal",
+    "newsletter": "Newsletter",
+    "about": "About"
+  },
+  "home": {
+    "about": "Indie Author & Storyteller"
+  },
+  "books": {
+  },
+  "blog": {
+    "title": "Janice's Blog",
+    "read": "Read Entry"
+  },
+  "blog-details": {
+    "not-found": "Post not found."
+  },
+  "newsletter": {
+  },
+  "about": {
+    "connect": "Let's Connect",
+    "author": "About Janice",
+    "title": "Author & World Builder",
+    "p1": "Janice Greve was born in London; she is married with four adult children. Today she and her husband live in Aalborg, Denmark. Janice enjoys writing, reading, walks by the fjord, and is often on Bluesky participating in a 7th century world where she is a Viking baker with a longboat!",
+    "p2": "Before having children Janice worked as a psychiatric nurse and drama therapist. After, she chose to do voluntary work in her children's schools telling her own stories at story time or helping children who had difficulty reading. The family moved to Denmark in 2009, where she taught English as a second language to university staff. Janice is now committed to her writing."
+  },
+  "footer": {
+    "legal": "All rights reserved."
+  }
+}

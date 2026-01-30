@@ -1,0 +1,33 @@
+{
+  "nav": {
+    "home": "Velkommen",
+    "books": "Bøger",
+    "blog": "Journal",
+    "newsletter": "Nyhedsbrev",
+    "about": "Om Janice"
+  },
+  "home": {
+    "about": "Indieforfatter og historiefortæller"
+  },
+  "books": {
+  },
+  "blog": {
+    "title": "Janice's Journal",
+    "read": "Læs indhold"
+  },
+  "blog-details": {
+    "not-found": "Indhold ikke fundet."
+  },
+  "newsletter": {
+  },
+  "about": {
+    "connect": "Lad os tage kontakt",
+    "author": "Om Janice",
+    "title": "Forfatter og verdensbygger",
+    "p1": "Janice Greve er født i London; hun er gift og har fire voksne børn. I dag bor hun og hendes mand i Aalborg. Janice nyder at skrive, læse, gå ture langs fjorden og er ofte på Bluesky, hvor hun deltager i en verden fra det 7. århundrede, hvor hun er vikingebager med en langbåd!",
+    "p2": "Før hun fik børn, arbejdede Janice som psykiatrisk sygeplejerske og dramaterapeut. Bagefter valgte hun at lave frivilligt arbejde i sine børns skoler, hvor hun fortalte sine egne historier til historietid eller hjalp børn, der havde svært ved at læse. Familien flyttede til Danmark i 2009, hvor hun underviste i engelsk som andetsprog til universitetsansatte. Janice er nu forfatter på fuldtid."
+  },
+  "footer": {
+    "legal": "Alle rettigheder forbeholdes."
+  }
+}

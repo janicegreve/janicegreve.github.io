@@ -1,15 +1,17 @@
 import { useParams, Link } from 'react-router';
-import { blogPosts } from '../utils/blogLoader';
+import { useTranslation } from 'react-i18next';
+import { getBlogPosts } from '../utils/blogLoader';
 
 export const PostDetails = () => {
-  const { slug } = useParams();
-  
+  const { lang, slug } = useParams();
+  const { t } = useTranslation();
+
   // Find the specific post based on the URL slug
-  const post = blogPosts.find((p) => p.slug === slug);
+  const post = getBlogPosts(lang).find((p) => p.slug === slug);
 
   // Handle cases where the post doesn't exist (e.g., manual URL typing)
   if (!post) {
-    return <div className="text-center py-20">Post not found.</div>;
+    return <div className="text-center py-20">{t('blog-details.not-found')}</div>;
   }
 
   return (

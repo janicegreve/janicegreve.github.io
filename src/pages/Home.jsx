@@ -2,8 +2,10 @@ import clsx from 'clsx';
 import { FeaturedBook } from "../components/FeaturedBook";
 import { SocialLinks } from "../components/SocialLinks"
 import { UnderConstruction } from "../components/UnderConstruction";
+import { useTranslation } from 'react-i18next';
 
 export const Home = () => {
+  const { t } = useTranslation();
 
   return (
     <>
@@ -18,7 +20,7 @@ export const Home = () => {
         </h1>
 
         <p className="text-center mt-4 text-slate-500 uppercase tracking-[0.5em] text-sm md:text-base">
-          Indie Author & Storyteller
+          {t('home.about')}
         </p>
       </section>
 
