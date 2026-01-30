@@ -2,6 +2,7 @@ import clsx from 'clsx';
 import { FeaturedBook } from "../components/FeaturedBook";
 import { SocialLinks } from "../components/SocialLinks"
 import { UnderConstruction } from "../components/UnderConstruction";
+import { NewsletterSection } from '../components/NewsletterSection';
 
 export const Home = () => {
 
@@ -29,6 +30,8 @@ export const Home = () => {
       <div>
         <FeaturedBook />
       </div>
+
+      <NewsletterSection />
 
       <UnderConstruction />
     </>

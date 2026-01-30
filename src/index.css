@@ -17,3 +17,11 @@
 
   --typography-body-font-family: var(--font-sans);
 }
+
+/* Remove border from Kit newsletter form. */
+.formkit-form[data-uid], 
+.formkit-form[data-uid] * {
+  border: none !important;
+  border-width: 0 !important;
+  box-shadow: none !important;
+}
