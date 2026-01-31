@@ -11,7 +11,7 @@ export const Books = () => {
 
   return (
     <>
-      <div className="max-w-6xl mx-auto py-20 px-6">
+      <div className="max-w-6xl mx-auto py-10 px-6">
         <h1 className="text-5xl mb-16 text-center">{t('books.title')}</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {books.map(book => (
@@ -21,6 +21,11 @@ export const Books = () => {
               </div>
               <h2 className={`mt-6 text-2xl ${book.titleFont} text-slate-900`}>{book.title}</h2>
               <p className="text-slate-500 italic text-sm">{book.tagline}</p>
+
+              <div className="pt-2 flex items-center text-indigo-600 font-bold text-sm uppercase tracking-widest">
+                {t('books.read')}
+                <span className="ml-2 transition-transform group-hover:translate-x-1">→</span>
+              </div>
             </Link>
           ))}
         </div>

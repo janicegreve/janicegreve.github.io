@@ -11,7 +11,8 @@
     "about": "Indieforfatter og historiefortæller"
   },
   "books": {
-    "title": "Mine Bøger"
+    "title": "Mine Bøger",
+    "read": "Læs mere"
   },
   "bookDetails": {
     "notFound": "Bogen ikke fundet."

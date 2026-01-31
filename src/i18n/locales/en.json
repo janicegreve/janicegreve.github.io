@@ -11,7 +11,8 @@
     "about": "Indie Author & Storyteller"
   },
   "books": {
-    "title": "My Books"
+    "title": "My Books",
+    "read": "See More"
   },
   "bookDetails": {
     "notFound": "Book not found.",
