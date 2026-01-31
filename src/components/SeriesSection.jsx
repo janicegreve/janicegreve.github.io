@@ -1,0 +1,70 @@
+import { useParams, Link } from 'react-router';
+import { useTranslation } from 'react-i18next';
+import clsx from 'clsx';
+import { getBooks } from '../utils/bookLoader';
+import { getSeriesById } from '../utils/seriesLoader';
+import { SeriesBanner } from './SeriesBanner';
+
+export const SeriesSection = ({ currentBook, seriesId }) => {
+  const { lang } = useParams();
+  const { t } = useTranslation();
+
+  if (currentBook) {
+    if (!currentBook.seriesId) return null;
+
+    seriesId = currentBook.seriesId;
+  }
+
+  const books = getBooks(lang);
+  const seriesBooks = currentBook
+    ? books.filter(book => book.seriesId === currentBook.seriesId && book.id !== currentBook.id)
+    : books.filter(book => book.seriesId === seriesId);
+
+  const series = getSeriesById(lang, seriesId);
+
+  return (
+    <section className="mt-20">
+      <div className="">
+        <div className={clsx(
+          "bg-linear-to-br from-pink-100 to-pink-300",
+          "mt-4 rounded-lg p-8 shadow-2xl",
+          "flex flex-col items-center",
+        )}>
+          <SeriesBanner series={series.id} />
+
+          <h3 className="text-4xl text-center md:text-5xl mt-8 mb-4 drop-shadow-md">
+            {series.title}
+          </h3>
+          <p className="max-w-2xl text-justify text-lg md:text-xl drop-shadow-sm">
+            {series.description}
+          </p>
+        </div>
+      </div>
+
+      {seriesBooks.length > 0 && <h3 className="text-3xl text-slate-900 mb-10 text-center">
+        {lang === 'da' ? 'Mere i denne serie' : 'More in this series'}
+      </h3>}
+
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        {seriesBooks.map((book) => (
+          <Link
+            key={book.id}
+            to={`/${lang}/books/${book.id}`}
+            className="group block text-center"
+          >
+            <div className="relative aspect-2/3 overflow-hidden rounded-lg shadow-md transition-transform group-hover:-translate-y-2">
+              <img 
+                src={book.cover}
+                alt={book.title}
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h4 className="mt-4 font-fredoka text-sm uppercase tracking-wider text-slate-700 group-hover:text-indigo-600">
+              {book.title}
+            </h4>
+          </Link>
+        ))}
+      </div>
+    </section>
+  );
+}

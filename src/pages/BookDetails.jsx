@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router';
 import { useTranslation } from 'react-i18next';
 import { getBookById } from '../utils/bookLoader';
 import { BuyLinks } from '../components/BuyLinks';
+import { SeriesSection } from '../components/SeriesSection';
 
 export const BookDetails = () => {
   const { lang, id } = useParams();
@@ -47,11 +48,13 @@ export const BookDetails = () => {
           <div className="pt-8 border-t border-slate-100">
             {/* <h3 className="text-lg mb-6">{t('bookDetails.getCopy')}</h3> */}
             <div className="flex flex-wrap gap-4">
-              <BuyLinks links={book.links} lang={lang} />
+              <BuyLinks links={book.links} />
             </div>
           </div>
         </div>
       </div>
+
+      <SeriesSection currentBook={book} />
     </article>
   );
 }

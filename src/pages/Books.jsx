@@ -1,8 +1,6 @@
 import { useParams, Link } from 'react-router';
 import { useTranslation } from 'react-i18next';
-import clsx from 'clsx';
 import { getBooks } from '../utils/bookLoader';
-import { AalborgSign } from '../components/AalborgSign'
 
 export const Books = () => {
   const { t } = useTranslation();
@@ -29,22 +27,6 @@ export const Books = () => {
             </Link>
           ))}
         </div>
-      </div>
-
-      <div className="w-fit">
-        <AalborgSign />
-      </div>
-
-      <div className={clsx(
-        "bg-linear-to-br from-pink-200 to-pink-500",
-        "mt-8 rounded-lg p-8 shadow-2xl",
-        "flex flex-col items-center",
-        )}>
-        <img 
-          src="/covers/ava-jones-3d.webp" 
-          alt="Ava Jones: The End And The Beginning" 
-          className="w-64 md:w-80 justify-center transition-transform duration-500 hover:scale-105"
-        />
       </div>
     </>
   );

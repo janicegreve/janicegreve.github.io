@@ -1,6 +1,8 @@
+import { useParams } from 'react-router';
 import { useTranslation } from 'react-i18next';
 
-export const BuyLinks = ({ links, lang }) => {
+export const BuyLinks = ({ links }) => {
+  const { lang } = useParams();
   const { t } = useTranslation();
 
   // Define which links are appropriate for which language
