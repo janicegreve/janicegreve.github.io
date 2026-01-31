@@ -1,0 +1,43 @@
+[
+  {
+    "id": "ava-jones",
+    "en": {
+      "lang": "en",
+      "title": "Ava Jones: The End And The Beginning",
+      "titleFont": "font-chewy",
+      "release": "2025-12-17",
+      "tagline": "A young Welsh woman moves to Denmark for love. A tale of escape, love, loss, and new beginnings.",
+      "description": [
+        "Does anyone know what the future holds, when love is the question? Ava Jones thought life was going smoothly, until she arrived home one Tuesday. She thought her future was set; she was wrong. How could her life fall apart between breakfast and dinner? She read the note again. She tried ringing her boyfriend; gave up and opened the bottle of rosé in the fridge. At times like this, it was best to write a list. Times when you thought you might be losing your mind.",
+        "Along comes Anders, her handsome downstairs neighbour, offering her pizza and his sofa for the night. His kindness almost sends Ava over the edge. Along with her friends, he gives Ava a helping hand navigating Tuesday's curveball. Ava realises, the more time she spends with Anders that they share undeniable chemistry. Maybe there's a new future for her, but what Ava doesn't know, is that Anders has a secret.",
+        "A young Welsh woman moves to Denmark for love. A tale of escape, love, loss, and new beginnings. <i>Ava Jones: The End And The Beginning</i> is a humorous modern love story, with a touch of spice."
+      ],
+      "cover": "/covers/ava-jones.webp",
+      "reviews": [
+        {
+          "lang": "en",
+          "text": "Ava Jones is like a warm hug from beginning to end.",
+          "critic": "Amazon Review"
+        },
+        {
+          "lang": "en",
+          "text": "Wonderful well rounded story that leaves a lovely sweet feeling.",
+          "critic": "Thea Meadows"
+        }
+      ],
+      "links": {
+        "amazonUS": "https://www.amazon.com/Ava-Jones-Beginning-Janice-Greve/dp/B0G5LF1H59",
+        "amazonDE": "https://www.amazon.de/-/en/Janice-Greve/dp/B0G5LF1H59",
+        "amazonUK": "https://www.amazon.co.uk/Ava-Jones-Beginning-Janice-Greve/dp/B0G5LF1H59"
+      }
+    },
+    "da": {
+      "tagline": "En ung walisisk kvinde flytter til Danmark for kærlighedens skyld. En fortælling om flugt, kærlighed, tab og nye begyndelser.",
+      "description": [
+        "Ved nogen, hvad fremtiden bringer, når kærligheden er spørgsmålet? Ava Jones troede, at livet gik glat, indtil hun kom hjem en tirsdag. Hun troede, at hendes fremtid var fastlagt; hun tog fejl. Hvordan kunne hendes liv falde fra hinanden mellem morgenmad og aftensmad? Hun læste beskeden igen. Hun prøvede at ringe til sin kæreste; gav op og åbnede roséflasken i køleskabet. I sådanne situationer var det bedst at skrive en liste. Tidspunkter, hvor man troede, man var ved at miste forstanden.",
+        "Så kommer Anders, hendes flotte nabo nedenunder, og tilbyder hende pizza og sin sofa for natten. Hans venlighed sender næsten Ava ud over kanten. Sammen med sine venner giver han Ava en hjælpende hånd i tirsdagens uvejr. Ava indser, at jo mere tid hun bruger med Anders, jo mere uomtvistelig kemi deler de. Måske er der en ny fremtid for hende, men hvad Ava ikke ved, er, at Anders har en hemmelighed.",
+        "En ung walisisk kvinde flytter til Danmark for kærlighedens skyld. En fortælling om flugt, kærlighed, tab og nye begyndelser. <i>Ava Jones: The End And The Beginning</i> er en humoristisk, moderne kærlighedshistorie med et strejf af krydderi."
+      ]
+    }
+  }
+]

@@ -29,7 +29,7 @@ export const Home = () => {
       </div>
 
       <div>
-        <FeaturedBook />
+        <FeaturedBook bookId={'ava-jones'} />
       </div>
 
       <UnderConstruction />
