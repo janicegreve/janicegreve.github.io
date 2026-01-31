@@ -11,13 +11,18 @@
     "about": "Indie Author & Storyteller"
   },
   "books": {
+    "title": "My Books"
+  },
+  "bookDetails": {
+    "notFound": "Book not found.",
+    "getCopy": "Buy Here"
   },
   "blog": {
     "title": "Janice's Blog",
     "read": "Read Entry"
   },
-  "blog-details": {
-    "not-found": "Post not found.",
+  "blogDetails": {
+    "notFound": "Post not found.",
     "back": "Back to Blog"
   },
   "newsletter": {
@@ -32,7 +37,13 @@
   "footer": {
     "legal": "All rights reserved."
   },
-  "featured-book": {
+  "featuredBook": {
     "latest": "Latest Release"
+  },
+  "buyLinks": {
+    "buy": "Buy on",
+    "amazonUS" : "Amazon US",
+    "amazonUK" : "Amazon UK",
+    "amazonDE" : "Amazon Germany"
   }
 }

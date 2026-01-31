@@ -11,13 +11,13 @@ export const PostDetails = () => {
 
   // Handle cases where the post doesn't exist (e.g., manual URL typing)
   if (!post) {
-    return <div className="text-center py-20">{t('blog-details.not-found')}</div>;
+    return <div className="text-center py-20">{t('blogDetails.notFound')}</div>;
   }
 
   return (
     <article className="max-w-3xl mx-auto py-12 px-6 animate-fade-in-up">
       <Link to={`/${lang}/blog`} className="text-indigo-600 hover:underline text-sm uppercase tracking-widest">
-        ← {t('blog-details.back')}
+        ← {t('blogDetails.back')}
       </Link>
       
       <header className="mt-8 mb-12">

@@ -4,6 +4,7 @@ import { LanguageWrapper } from './components/LanguageWrapper';
 import { Layout } from './components/Layout';
 import { Home } from './pages/Home';
 import { Books } from './pages/Books';
+import { BookDetails } from "./pages/BookDetails";
 import { Blog } from './pages/Blog';
 import { PostDetails } from './pages/PostDetails';
 import { Newsletter } from './pages/Newsletter';
@@ -27,6 +28,7 @@ export const App = () => {
           <Route element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="books" element={<Books />} />
+            <Route path="books/:id" element={<BookDetails />} />
             <Route path="blog" element={<Blog />} />
             <Route path="blog/:slug" element={<PostDetails />} />
             <Route path="newsletter" element={<Newsletter />} />

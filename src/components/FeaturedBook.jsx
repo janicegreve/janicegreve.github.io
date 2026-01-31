@@ -32,7 +32,7 @@ export const FeaturedBook = ({ bookId }) => {
       {/* RIGHT: Details & Social Proof */}
       <div className="flex flex-col space-y-6 text-center md:text-left">
         <div>
-          <span className="text-indigo-600 font-bold uppercase tracking-widest text-xs">{t('featured-book.latest')}</span>
+          <span className="text-indigo-600 font-bold uppercase tracking-widest text-xs">{t('featuredBook.latest')}</span>
           <h2 className={`text-xl ${book.titleFont} mt-2`}>{book.title}</h2>
           <p className="text-xl text-slate-600 mt-4 leading-relaxed font-light italic">
             {book.tagline}
@@ -41,8 +41,8 @@ export const FeaturedBook = ({ bookId }) => {
 
         {/* Quoted Reviews */}
         <div className="space-y-4 border-l-2 border-indigo-100 pl-6 italic text-slate-500">
-          {getReviews(lang, book).slice(0, 3).map(review => (
-            <p className="text-sm">"{review.text}" — <span className="font-bold">{review.critic}</span></p>
+          {getReviews(lang, book).slice(0, 3).map((review, index) => (
+            <p key={`${lang}-${index}`} className="text-sm">"{review.text}" — <span className="font-bold">{review.critic}</span></p>
           ))}
         </div>
 

@@ -11,13 +11,17 @@
     "about": "Indieforfatter og historiefortæller"
   },
   "books": {
+    "title": "Mine Bøger"
+  },
+  "bookDetails": {
+    "notFound": "Bogen ikke fundet."
   },
   "blog": {
     "title": "Janice's Journal",
     "read": "Læs indhold"
   },
-  "blog-details": {
-    "not-found": "Indhold ikke fundet.",
+  "blogDetails": {
+    "notFound": "Indhold ikke fundet.",
     "back": "Tilbage til Journal"
   },
   "newsletter": {
@@ -32,7 +36,13 @@
   "footer": {
     "legal": "Alle rettigheder forbeholdes."
   },
-  "featured-book": {
+  "featuredBook": {
     "latest": "Seneste udgivelse"
+  },
+  "buyLinks": {
+    "buy": "Køb på",
+    "amazonUS" : "Amazon US",
+    "amazonUK" : "Amazon UK",
+    "amazonDE" : "Amazon Tyskland"
   }
 }
