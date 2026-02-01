@@ -14,7 +14,7 @@ export const BookDetails = () => {
   return (
     <article className="max-w-6xl mx-auto py-12 px-6 animate-fade-in-up">
       {/* Back button */}
-      <Link to={`/${lang}/books`} className="text-indigo-600 hover:underline text-sm uppercase tracking-widest">
+      <Link to={`/${lang}/books`} className="text-indigo-600 text-sm uppercase tracking-widest">
         ← {t('nav.books')}
       </Link>
 
