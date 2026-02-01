@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from "react-router";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router";
 import { LanguageWrapper } from './components/LanguageWrapper';
 import { Layout } from './components/Layout';
 import { Home } from './pages/Home';
@@ -9,18 +8,12 @@ import { Blog } from './pages/Blog';
 import { PostDetails } from './pages/PostDetails';
 import { Newsletter } from './pages/Newsletter';
 import { About } from './pages/About';
-
-export default function ScrollToTop() {
-  const { pathname } = useLocation();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-  return null;
-}
+import { ScrollToTop } from "./components/ScrollToTop";
 
 export const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Navigate to="/en" replace />} />
 
