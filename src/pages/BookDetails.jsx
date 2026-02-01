@@ -45,7 +45,7 @@ export const BookDetails = () => {
           </div>
 
           {/* DYNAMIC BUY LINKS */}
-          <div className="pt-8 border-t border-slate-100">
+          <div className="pt-8">
             {/* <h3 className="text-lg mb-6">{t('bookDetails.getCopy')}</h3> */}
             <div className="flex flex-wrap gap-4">
               <BuyLinks links={book.links} />

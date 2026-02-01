@@ -49,7 +49,7 @@ export const About = () => {
           </div>
 
           {/* Socials again for Mobile View */}
-          <div className="md:hidden pt-8 border-t border-slate-100">
+          <div className="md:hidden pt-8">
             <h3 className="text-2xl mb-6">
               {t('about.connect')}
             </h3>
