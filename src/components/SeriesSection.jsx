@@ -59,7 +59,7 @@ export const SeriesSection = ({ currentBook, seriesId }) => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h4 className="mt-4 font-fredoka text-sm uppercase tracking-wider text-slate-700 group-hover:text-indigo-600">
+            <h4 className={`mt-4 ${book.titleFont} text-sm uppercase tracking-wider text-slate-700 group-hover:text-indigo-600`}>
               {book.title}
             </h4>
           </Link>
