@@ -16,7 +16,7 @@ export const Layout = () => {
       <Header />
 
       {/* Main content grows to fill space */}
-      <main className="grow container mx-auto px-4 py-4">
+      <main className="w-full overflow-x-hidden">
         <Outlet />
       </main>
 

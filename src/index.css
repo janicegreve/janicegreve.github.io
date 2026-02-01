@@ -7,6 +7,7 @@
 @import "@fontsource/fredoka/400.css";
 @import "@fontsource/fredoka/700.css";
 @import "@fontsource/chewy/400.css";
+@import "@fontsource/emilys-candy/400.css";
 
 @theme {
   --font-sans: "Lora", serif;
@@ -14,6 +15,7 @@
   
   --font-fredoka: "Fredoka", sans-serif;
   --font-chewy: "Chewy", display;
+  --font-emilys-candy: "Emilys Candy", display;
 
   --typography-body-font-family: var(--font-sans);
 }
@@ -24,4 +26,18 @@
   border: none !important;
   border-width: 0 !important;
   box-shadow: none !important;
+}
+
+@utility slant-down {
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+}
+
+@utility slant-up {
+  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+}
+
+/* Add a little extra padding to ensure content doesn't get "clipped" by the slant */
+.funky-container {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }

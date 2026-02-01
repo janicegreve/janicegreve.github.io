@@ -8,7 +8,19 @@
     "close": "Close"
   },
   "home": {
-    "about": "Indie Author & Storyteller"
+    "authorDescription": "Indie Author & Storyteller",
+    "aboutTitle": "Welcome, Reader",
+    "aboutText": "I weave tales where dark desires meet deadly secrets. Step into my world.",
+    "aboutLink": "The Full Story",
+    "booksTitle": "The Bookshelf",
+    "booksText": "From epic series to standalone mysteries, explore my full bibliography and find your next favorite.",
+    "booksLink": "Browse Books",
+    "blogTitle": "The Journal",
+    "blogText": "Behind-the-scenes notes on writing, early snippets, and occasional ramblings about cats or vikings.",
+    "blogLink": "Read the Blog",
+    "newsletterTitle": "Join the List",
+    "newsletterText": "Get monthly letters, be the first to see new cover reveals, and get \"The Story Behind the Story\".",
+    "newsletterLink": "Stay in Touch"
   },
   "books": {
     "title": "My Books",

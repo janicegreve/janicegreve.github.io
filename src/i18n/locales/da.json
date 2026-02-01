@@ -8,7 +8,19 @@
     "close": "Luk"
   },
   "home": {
-    "about": "Indieforfatter og historiefortæller"
+    "authorDescription": "Indieforfatter og historiefortæller",
+    "aboutTitle": "Velkommen, læser",
+    "aboutText": "Jeg væver fortællinger, hvor mørk begær møder dødbringende hemmeligheder. Træd ind i min verden.",
+    "aboutLink": "Den fulde historie",
+    "booksTitle": "Boghylden",
+    "booksText": "Fra episke serier til enkeltstående mysterier, udforsk min fulde bibliografi og find din næste favorit.",
+    "booksLink": "Gennemse bøger",
+    "blogTitle": "Journalen",
+    "blogText": "Bag-kulisserne-noter om skrivning, tidlige uddrag og lejlighedsvis vrøvl om katte eller vikinger.",
+    "blogLink": "Læs bloggen",
+    "newsletterTitle": "Tilmeld dig listen",
+    "newsletterText": "Få månedlige breve, vær den første til at se nye forsideafsløringer, og få \"historien bag historien\".",
+    "newsletterLink": "Hold kontakten"
   },
   "books": {
     "title": "Mine Bøger",
