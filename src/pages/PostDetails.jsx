@@ -22,7 +22,7 @@ export const PostDetails = () => {
       
       <header className="mt-8 mb-12">
         <h1 className="text-4xl text-slate-900">{post.title}</h1>
-        <p className="text-slate-400 mt-4">{post.date}</p>
+        <p className="text-slate-400 mt-4">{post.dateString}</p>
         <span className="text-xs uppercase tracking-widest text-indigo-500 font-bold">
           {post.tags?.join(", ") || 'Article'}
         </span>

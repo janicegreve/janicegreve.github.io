@@ -31,7 +31,7 @@ export const Blog = () => {
           >
             {/* Metadata Bar */}
             <div className="flex items-center justify-between">
-              <p className="text-slate-400 text-sm">{post.date}</p>
+              <p className="text-slate-400 text-sm">{post.dateString}</p>
               <span className="text-xs uppercase tracking-widest text-indigo-500 font-bold">
                 {post.tags?.[0] || 'Article'}
               </span>

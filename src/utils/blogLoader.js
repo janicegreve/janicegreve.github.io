@@ -13,7 +13,8 @@ export const getBlogPosts = (lang) => {
       
       return {
         ...attributes,
-        date: attributes.date instanceof Date 
+        date: attributes.date,
+        dateString: attributes.date instanceof Date 
           ? attributes.date.toLocaleDateString(lang === 'da' ? 'da-DK' : 'en-US', {
               year: 'numeric', month: 'long', day: 'numeric'
             }) 
@@ -22,5 +23,5 @@ export const getBlogPosts = (lang) => {
         slug: path.split('/').pop().replace('.md', ''),
       };
     })
-    .sort((a, b) => new Date(b.date) - new Date(a.date));
+    .sort((a, b) => b.date - a.date);
 };
