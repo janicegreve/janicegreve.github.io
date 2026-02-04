@@ -40,7 +40,7 @@ export const Home = () => {
         bgColor="bg-gradient-to-r from-indigo-50 to-indigo-300"
         slant="down"
       >
-        <img src="/janicegrevedoodle.webp" className="w-48 rotate-6 rounded-3xl" alt="Sketch" />
+        <img src="/janicegrevedoodle.webp" className="w-48 rotate-6 rounded-3xl hover:-rotate-6 transition-transform" alt="Sketch" />
       </FunkySection>
 
       <FunkySection
@@ -65,7 +65,7 @@ export const Home = () => {
         bgColor="bg-gradient-to-r from-zinc-50 to-zinc-300"
         slant="down"
       >
-        <div className="text-white font-chewy text-4xl border-4 border-indigo-400 p-8 -rotate-6">
+        <div className="text-white font-emilys-candy text-4xl border-4 border-indigo-400 p-8 -rotate-6 transition-transform hover:scale-125 hover:rotate-6">
           Latest Notes
         </div>
       </FunkySection>
@@ -78,8 +78,12 @@ export const Home = () => {
         bgColor="bg-gradient-to-r from-amber-300 to-amber-50"
         slant="none"
       >
-        <div className="p-4 bg-amber-400 rounded-3xl rotate-2">
-           <Mailbox size={150} color="black" fill="white" />
+        <div className="p-4 bg-amber-400 rounded-3xl rotate-2 transition-transform hover:perspective-dramatic">
+           {/* <Mailbox className="transition-transform hover:transition-[color]-white" size={150} color="black" fill="white" /> */}
+          <Mailbox 
+            size={150} 
+            className="transition-colors duration-1000 text-black fill-white hover:text-white hover:fill-black" 
+          />
         </div>
       </FunkySection>
 

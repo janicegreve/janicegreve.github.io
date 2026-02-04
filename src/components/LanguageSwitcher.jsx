@@ -14,7 +14,7 @@ export const LanguageSwitcher = () => {
   return (
     <button 
       onClick={toggleLanguage}
-      className="uppercase text-xs tracking-widest px-2 py-1 border border-slate-200 rounded hover:bg-slate-50"
+      className="uppercase text-xs tracking-widest px-2 py-1 border border-slate-200 rounded hover:bg-slate-50 cursor-pointer"
       aria-label="Switch Language"
     >
       {i18n.language === 'en' ? '→ Dansk' : '→ English'}

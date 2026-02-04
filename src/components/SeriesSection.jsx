@@ -24,7 +24,7 @@ export const SeriesSection = ({ currentBook, seriesId }) => {
 
   return (
     <section className="mt-20">
-      <div className="">
+      <div className="pb-4">
         <div className={clsx(
           "bg-linear-to-br from-pink-100 to-pink-300",
           "mt-4 rounded-lg p-8 shadow-2xl",

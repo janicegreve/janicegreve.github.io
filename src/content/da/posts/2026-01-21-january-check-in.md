@@ -22,7 +22,7 @@ Så jeg har været frem og tilbage over to kapitler i dagevis.
 
 I dag begyndte jeg at skrive det sidste kapitel af det første udkast. I morgen er det vores bryllupsdag, så det ville være dejligt, hvis jeg blev færdig med det på det tidspunkt!
 
-Jeg er ikke sikker på, hvilken forskel det gør, bare en dejlig dato, hvis du forstår, hvad jeg mener.
+Jeg er ikke sikker på, hvilken forskel det gør, bare en dejlig dato, hvis I forstår, hvad jeg mener.
 
 Dernæst kommer en uendelig tid i redaktionsskyttegravene.
 
