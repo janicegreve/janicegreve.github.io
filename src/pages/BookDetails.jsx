@@ -40,8 +40,7 @@ export const BookDetails = () => {
                   dangerouslySetInnerHTML={{ __html: paragraph }} 
                 />
               );
-            })
-            }
+            })}
           </div>
 
           {/* DYNAMIC BUY LINKS */}

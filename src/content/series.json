@@ -2,15 +2,18 @@
   {
     "id": "aalborg-love-stories",
     "en": {
-      "title": "Aalborg Love Stories",
+      "title": "The Aalborg Love Stories",
       "isLooseSeries": true,
       "description": [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "A series of stand-alone humorous love stories set predominantly in Aalborg, northern Denmark. Life often throws people from different backgrounds, lifestyles, or countries together, if the chemistry is right. Each of these stories has a female character as the lead. Ages, circumstances, and nationalities differ, but love is always central. The stories are told with humour and compassion. Old friends from other stories in the series crop up, giving a cohesive feel to the series. Aalborg itself shines as a backdrop to the series, sharing it's history, culture and not least the fjord on which it sits.",
+        "The stories aim to offer well rounded characters with interesting plots. Characters you will root for and feel invested in. Guaranteed smiles, banter and laughs with just a pinch of spice. Feel-good stories you'll want to read again and again."
       ]
     },
     "da": {
       "title": "Aalborg Kærlighedshistorier",
       "description": [
+        "En serie af enkeltstående humoristiske kærlighedshistorier, der primært foregår i Aalborg i Nordjylland. Livet bringer ofte mennesker fra forskellige baggrunde, livsstile eller lande sammen, hvis kemien er rigtig. Hver af disse historier har en kvinde i hovedrollen. Alder, omstændigheder og nationaliteter er forskellige, men kærligheden er altid i centrum. Historierne fortælles med humor og medfølelse. Gamle venner fra andre historier i serien dukker op, hvilket giver serien en sammenhængende stemning. Aalborg selv stråler som baggrund for serien og deler sin historie, kultur og ikke mindst fjorden, som byen ligger ved.",
+        "Historierne sigter mod at tilbyde alsidige karakterer med interessante plots. Karakterer, du vil heppe på og føle dig involveret i. Garanteret smil, drillerier og latter med et strejf af krydderi. Feel-good historier, du vil have lyst til at læse igen og igen."
       ]
     }
   }

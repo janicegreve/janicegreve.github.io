@@ -32,12 +32,18 @@ export const SeriesSection = ({ currentBook, seriesId }) => {
         )}>
           <SeriesBanner series={series.id} />
 
-          <h3 className="text-4xl text-center md:text-5xl mt-8 mb-4 drop-shadow-md">
+          <h3 className="text-xl text-center md:text-4xl mt-8 mb-4 drop-shadow-md uppercase">
             {series.title}
           </h3>
-          <p className="max-w-2xl text-justify text-lg md:text-xl drop-shadow-sm">
-            {series.description}
-          </p>
+          {series.description.map((paragraph, index) => {
+            return (
+              <p
+                key={index}
+                className={`max-w-2xl text-justify text-lg md:text-xl drop-shadow-sm ${index > 0 ? "indent-6" : ""}`}
+                dangerouslySetInnerHTML={{ __html: paragraph }} 
+              />
+            );
+          })}
         </div>
       </div>
 
