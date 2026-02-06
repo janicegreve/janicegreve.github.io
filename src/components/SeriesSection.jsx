@@ -23,23 +23,25 @@ export const SeriesSection = ({ currentBook, seriesId }) => {
   const series = getSeriesById(lang, seriesId);
 
   return (
-    <section className="mt-20">
+    <section className="mt-20 flex flex-col items-center">
       <div className="pb-4">
         <div className={clsx(
           "bg-linear-to-br from-pink-100 to-pink-300",
           "mt-4 rounded-lg p-8 shadow-2xl",
           "flex flex-col items-center",
         )}>
-          <SeriesBanner series={series.id} />
+          <div className="max-w-2xl">
+            <SeriesBanner series={series.id} />
+          </div>
 
-          <h3 className="text-xl text-center md:text-4xl mt-8 mb-4 drop-shadow-md uppercase">
+          <h3 className="text-xl text-center md:text-5xl mt-8 mb-8 drop-shadow-md uppercase">
             {series.title}
           </h3>
           {series.description.map((paragraph, index) => {
             return (
               <p
                 key={index}
-                className={`max-w-2xl text-justify text-lg md:text-xl drop-shadow-sm ${index > 0 ? "indent-6" : ""}`}
+                className={`text-justify leading-7 md:leading-10 text-lg md:text-xl drop-shadow-sm ${index > 0 ? "indent-6" : ""}`}
                 dangerouslySetInnerHTML={{ __html: paragraph }} 
               />
             );

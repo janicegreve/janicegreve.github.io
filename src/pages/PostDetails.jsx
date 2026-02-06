@@ -34,7 +34,7 @@ export const PostDetails = () => {
           We use Tailwind's 'prose' class to style the raw HTML tags automatically.
       */}
       <div 
-        className="prose prose-lg md:prose-xl max-w-none"
+        className="prose prose-lg md:prose-xl max-w-none text-justify"
         dangerouslySetInnerHTML={{ __html: post.content }} 
       />
     </article>
