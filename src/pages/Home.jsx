@@ -78,12 +78,8 @@ export const Home = () => {
         bgColor="bg-gradient-to-r from-amber-300 to-amber-50"
         slant="none"
       >
-        <div className="p-4 bg-amber-400 rounded-3xl rotate-2 transition-transform hover:perspective-dramatic">
-           {/* <Mailbox className="transition-transform hover:transition-[color]-white" size={150} color="black" fill="white" /> */}
-          <Mailbox 
-            size={150} 
-            className="transition-colors duration-1000 text-black fill-white hover:text-white hover:fill-black" 
-          />
+        <div className="p-4 bg-amber-400 rounded-3xl rotate-4 transition-transform hover:rotate-8">
+          <Mailbox size={150} color="black" fill="white" className="transition-transform hover:-rotate-16" />
         </div>
       </FunkySection>
 

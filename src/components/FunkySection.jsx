@@ -17,7 +17,7 @@ export const FunkySection = ({
         <div className="space-y-6 font-emilys-candy">
           <h2 className="text-5xl">{title}</h2>
           <p className="text-xl leading-relaxed text-slate-700">{text}</p>
-          <Link to={linkTo} className="inline-block bg-slate-900 text-white px-8 py-3 rounded-full uppercase tracking-widest text-xs hover:bg-indigo-600 transition-all">
+          <Link to={linkTo} className="inline-block bg-slate-900 text-white px-8 py-3 rounded-full uppercase tracking-widest text-xs hover:bg-indigo-600 transition hover:scale-105">
             {linkText}
           </Link>
         </div>
