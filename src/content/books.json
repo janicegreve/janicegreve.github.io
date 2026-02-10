@@ -4,9 +4,17 @@
     "en": {
       "lang": "en",
       "title": "Ava Jones: The End And The Beginning",
-      "titleFont": "font-chewy",
+      "titles": [
+        {
+          "text": "Ava Jones",
+          "tailwindCss": "font-chewy text-[2.4em] leading-none"
+        },
+        {
+          "text": "The End And The Beginning",
+          "tailwindCss": "font-chewy text-[1em]"
+        }
+      ],
       "seriesId": "aalborg-love-stories",
-      "isLooseSeries": true,
       "release": "2025-12-17",
       "tagline": "A young Welsh woman moves to Denmark for love. A tale of escape, love, loss, and new beginnings.",
       "description": [
@@ -41,6 +49,37 @@
         "Så kommer Anders, hendes flotte nabo nedenunder, og tilbyder hende pizza og sin sofa for natten. Hans venlighed sender næsten Ava ud over kanten. Sammen med sine venner giver han Ava en hjælpende hånd i tirsdagens uvejr. Ava indser, at jo mere tid hun bruger med Anders, jo mere uomtvistelig kemi deler de. Måske er der en ny fremtid for hende, men hvad Ava ikke ved, er, at Anders har en hemmelighed.",
         "En ung walisisk kvinde flytter til Danmark for kærlighedens skyld. En fortælling om flugt, kærlighed, tab og nye begyndelser. <i>Ava Jones: The End And The Beginning</i> er en humoristisk, moderne kærlighedshistorie med et strejf af krydderi."
       ]
+    }
+  },
+  {
+    "id": "lunas-story",
+    "en": {
+      "lang": "en",
+      "title": "Luna's Story: Finding Love",
+      "titles": [
+        {
+          "text": "Luna's Story",
+          "tailwindCss": "font-chewy text-[2.4em] leading-none"
+        },
+        {
+          "text": "Finding Love",
+          "tailwindCss": "font-birthstone-bounce text-[2em]"
+        }
+      ],
+      "seriesId": "aalborg-love-stories",
+      "release": null,
+      "tagline": "Opening a café was her plan. Falling for the handyman wasn't.",
+      "description": [],
+      "cover": "/covers/en-placeholder.webp",
+      "cover3d": "/covers/en-placeholder-3d.webp",
+      "reviews": [],
+      "links": {}
+    },
+    "da": {
+      "tagline": "At åbne en café var hendes plan. At forelske sig i altmuligmanden var ikke.",
+      "description": [],
+      "cover": "/covers/da-placeholder.webp",
+      "cover3d": "/covers/da-placeholder-3d.webp"
     }
   }
 ]

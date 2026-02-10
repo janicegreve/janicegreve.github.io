@@ -57,5 +57,8 @@
     "amazonUS" : "Amazon US",
     "amazonUK" : "Amazon UK",
     "amazonDE" : "Amazon Tyskland"
+  },
+  "seriesSection": {
+    "more": "Mere i denne serie"
   }
 }

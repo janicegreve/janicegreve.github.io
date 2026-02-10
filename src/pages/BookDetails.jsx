@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { getBookById } from '../utils/bookLoader';
 import { BuyLinks } from '../components/BuyLinks';
 import { SeriesSection } from '../components/SeriesSection';
+import { BookTitle } from '../components/BookTitle';
 
 export const BookDetails = () => {
   const { lang, id } = useParams();
@@ -27,7 +28,7 @@ export const BookDetails = () => {
         {/* RIGHT: Localized Content & Buy Links */}
         <div className="md:col-span-7 space-y-8">
           <header>
-            <h1 className={`text-5xl ${book.titleFont} text-slate-900`}>{book.title}</h1>
+            <BookTitle book={book} textClass='text-xl md:text-3xl text-slate-900' />
             <p className="text-xl italic text-slate-600 mt-4">{book.tagline}</p>
           </header>
 

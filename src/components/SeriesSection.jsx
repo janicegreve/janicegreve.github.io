@@ -4,6 +4,7 @@ import clsx from 'clsx';
 import { getBooks } from '../utils/bookLoader';
 import { getSeriesById } from '../utils/seriesLoader';
 import { SeriesBanner } from './SeriesBanner';
+import { BookTitle } from './BookTitle';
 
 export const SeriesSection = ({ currentBook, seriesId }) => {
   const { lang } = useParams();
@@ -49,8 +50,8 @@ export const SeriesSection = ({ currentBook, seriesId }) => {
         </div>
       </div>
 
-      {seriesBooks.length > 0 && <h3 className="text-3xl text-slate-900 mb-10 text-center">
-        {lang === 'da' ? 'Mere i denne serie' : 'More in this series'}
+      {seriesBooks.length > 0 && <h3 className="text-3xl text-slate-900 my-10 text-center">
+        {t('seriesSection.more')}
       </h3>}
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -67,9 +68,9 @@ export const SeriesSection = ({ currentBook, seriesId }) => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h4 className={`mt-4 ${book.titleFont} text-sm uppercase tracking-wider text-slate-700 group-hover:text-indigo-600`}>
-              {book.title}
-            </h4>
+            <div className="mt-4">
+              <BookTitle book={book} textClass='text-xs text-slate-900' />
+            </div>
           </Link>
         ))}
       </div>

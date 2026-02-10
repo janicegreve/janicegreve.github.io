@@ -8,6 +8,7 @@
 @import "@fontsource/fredoka/700.css";
 @import "@fontsource/chewy/400.css";
 @import "@fontsource/emilys-candy/400.css";
+@import "@fontsource/birthstone-bounce/400.css";
 
 @theme {
   --font-sans: "Lora", serif;
@@ -16,6 +17,7 @@
   --font-fredoka: "Fredoka", sans-serif;
   --font-chewy: "Chewy", display;
   --font-emilys-candy: "Emilys Candy", display;
+  --font-birthstone-bounce: "Birthstone Bounce", display;
 
   --typography-body-font-family: var(--font-sans);
 }

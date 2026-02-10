@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Link, useParams } from 'react-router';
 import { getBookById, getReviews } from '../utils/bookLoader';
+import { BookTitle } from './BookTitle';
 
 export const FeaturedBook = ({ bookId }) => {
   const { t } = useTranslation();
@@ -34,7 +35,9 @@ export const FeaturedBook = ({ bookId }) => {
         <div className="flex flex-col space-y-6 text-center md:text-left">
           <div>
             <span className="text-indigo-600 font-bold uppercase tracking-widest text-xs">{t('featuredBook.latest')}</span>
-            <h2 className={`text-xl ${book.titleFont} mt-2`}>{book.title}</h2>
+            <div className="mt-2">
+              <BookTitle book={book} textClass='text-xl text-slate-900' />
+            </div>
             <p className="text-xl text-slate-600 mt-4 leading-relaxed font-light italic">
               {book.tagline}
             </p>
