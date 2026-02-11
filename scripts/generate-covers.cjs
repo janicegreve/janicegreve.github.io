@@ -61,23 +61,23 @@ async function generateCovers() {
           </defs>
 
           <g transform="rotate(45 450 50)">
-            <rect 
-              x="100" 
-              y="30" 
-              width="800" 
-              height="75" 
-              fill="url(#funkyGrad)" 
+            <rect
+              x="100"
+              y="30"
+              width="800"
+              height="75"
+              fill="url(#funkyGrad)"
               filter="url(#ribbonShadow)"
             />
-            <text 
-              x="520" 
-              y="68" 
-              fill="white" 
-              font-family="sans-serif" 
-              font-size="28" 
-              text-anchor="middle" 
+            <text
+              x="520"
+              y="68"
+              fill="white"
+              font-family="sans-serif"
+              font-size="28"
+              text-anchor="middle"
               dominant-baseline="middle"
-              style="letter-spacing: 2px;"
+              letter-spacing="4"
             >
               ${ribbonText}
             </text>
@@ -100,7 +100,7 @@ async function generateCovers() {
 
         console.log(`✅ [${lang.toUpperCase()}] Generated: ${book.id}.webp`);
       } catch (err) {
-        console.error(`❌ Error for ${book.id} in ${lang}:`, err.message);
+        console.error(`❌ [${lang.toUpperCase()}] Error for ${book.id}:`, err.message);
       }
     }
   })
