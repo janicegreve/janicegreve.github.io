@@ -14,6 +14,7 @@
           "tailwindCss": "font-chewy text-[1em]"
         }
       ],
+      "status": "new",
       "seriesId": "aalborg-love-stories",
       "release": "2025-12-17",
       "tagline": "Sometimes love is closer than you think.",
@@ -22,7 +23,7 @@
         "Along comes Anders, her handsome downstairs neighbour, offering her pizza and his sofa for the night. His kindness almost sends Ava over the edge. Along with her friends, he gives Ava a helping hand navigating Tuesday's curveball. Ava realises, the more time she spends with Anders that they share undeniable chemistry. Maybe there's a new future for her, but what Ava doesn't know, is that Anders has a secret.",
         "A young Welsh woman moves to Denmark for love. A tale of escape, love, loss, and new beginnings. <i>Ava Jones: The End And The Beginning</i> is a humorous modern love story, with a touch of spice."
       ],
-      "cover": "/covers/ava-jones.webp",
+      "cover": "/covers/en/ava-jones.webp",
       "cover3d": "/covers/ava-jones-3d.webp",
       "reviews": [
         {
@@ -48,7 +49,8 @@
         "Ved nogen, hvad fremtiden bringer, når kærligheden er spørgsmålet? Ava Jones troede, at livet gik glat, indtil hun kom hjem en tirsdag. Hun troede, at hendes fremtid var fastlagt; hun tog fejl. Hvordan kunne hendes liv falde fra hinanden mellem morgenmad og aftensmad? Hun læste beskeden igen. Hun prøvede at ringe til sin kæreste; gav op og åbnede roséflasken i køleskabet. I sådanne situationer var det bedst at skrive en liste. Tidspunkter, hvor man troede, man var ved at miste forstanden.",
         "Så kommer Anders, hendes flotte nabo nedenunder, og tilbyder hende pizza og sin sofa for natten. Hans venlighed sender næsten Ava ud over kanten. Sammen med sine venner giver han Ava en hjælpende hånd i tirsdagens uvejr. Ava indser, at jo mere tid hun bruger med Anders, jo mere uomtvistelig kemi deler de. Måske er der en ny fremtid for hende, men hvad Ava ikke ved, er, at Anders har en hemmelighed.",
         "En ung walisisk kvinde flytter til Danmark for kærlighedens skyld. En fortælling om flugt, kærlighed, tab og nye begyndelser. <i>Ava Jones: The End And The Beginning</i> er en humoristisk, moderne kærlighedshistorie med et strejf af krydderi."
-      ]
+      ],
+      "cover": "/covers/da/ava-jones.webp"
     }
   },
   {
@@ -66,11 +68,13 @@
           "tailwindCss": "font-birthstone-bounce text-[2em]"
         }
       ],
+      "status": "soon",
+      "coverRaw": "placeholder",
       "seriesId": "aalborg-love-stories",
       "release": null,
       "tagline": "Opening a café was her plan. Falling for the handyman wasn't.",
       "description": [],
-      "cover": "/covers/en-placeholder.webp",
+      "cover": "/covers/en/lunas-story.webp",
       "cover3d": "/covers/en-placeholder-3d.webp",
       "reviews": [],
       "links": {}
@@ -78,7 +82,7 @@
     "da": {
       "tagline": "At åbne en café var hendes plan. At forelske sig i altmuligmanden var ikke.",
       "description": [],
-      "cover": "/covers/da-placeholder.webp",
+      "cover": "/covers/da/lunas-story.webp",
       "cover3d": "/covers/da-placeholder-3d.webp"
     }
   }

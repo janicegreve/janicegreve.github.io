@@ -1,13 +1,11 @@
 import books from '../content/books.json';
 
 export const getBooks = (lang) => {
-  return books.map(book => {
-    return {
-      id: book.id,
-      ...book['en'],
-      ...book[lang],
-    };
-  });
+  return books.map(book => ({
+    id: book.id,
+    ...book['en'],
+    ...book[lang],
+  }));
 };
 
 export const getBookById = (lang, id) => getBooks(lang).find(b => b.id === id);

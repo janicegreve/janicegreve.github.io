@@ -61,5 +61,12 @@
   },
   "seriesSection": {
     "more": "More in this series"
+  },
+  "book": {
+    "status": {
+      "now": "Out Now",
+      "soon": "Coming Soon",
+      "new": "New Release"
+    }
   }
 }

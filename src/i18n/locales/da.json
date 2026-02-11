@@ -60,5 +60,12 @@
   },
   "seriesSection": {
     "more": "Mere i denne serie"
+  },
+  "book": {
+    "status": {
+      "now": "Ude nu",
+      "soon": "Kommer snart",
+      "new": "Ny udgivelse"
+    }
   }
 }
