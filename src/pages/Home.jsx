@@ -2,7 +2,6 @@ import { useParams } from 'react-router';
 import clsx from 'clsx';
 import { FeaturedBook } from "../components/FeaturedBook";
 import { SocialLinks } from "../components/SocialLinks"
-import { UnderConstruction } from "../components/UnderConstruction";
 import { useTranslation } from 'react-i18next';
 import { FunkySection } from '../components/FunkySection';
 import { Mailbox } from 'lucide-react';
@@ -86,8 +85,6 @@ export const Home = () => {
       <div>
         <FeaturedBook bookId={'ava-jones'} />
       </div>
-
-      <UnderConstruction />
     </div>
   )
 }
