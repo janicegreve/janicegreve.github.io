@@ -15,7 +15,7 @@ export const Books = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {books.map(book => (
             <Link to={`/${lang}/books/${book.id}`} key={book.id} className="group">
-              <div className="relative aspect-2/3 overflow-hidden rounded-xl shadow-lg transition-transform group-hover:-translate-y-2">
+              <div className="relative overflow-hidden rounded-xl shadow-lg transition-transform group-hover:-translate-y-2">
                 <img src={book.cover} alt={book.title} className="object-cover w-full h-full" />
               </div>
               <div className="mt-6">

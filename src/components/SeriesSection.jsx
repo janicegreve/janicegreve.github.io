@@ -61,7 +61,7 @@ export const SeriesSection = ({ currentBook, seriesId }) => {
             to={`/${lang}/books/${book.id}`}
             className="group block text-center"
           >
-            <div className="relative aspect-2/3 overflow-hidden rounded-lg shadow-md transition-transform group-hover:-translate-y-2">
+            <div className="relative overflow-hidden rounded-lg shadow-md transition-transform group-hover:-translate-y-2">
               <img 
                 src={book.cover}
                 alt={book.title}
