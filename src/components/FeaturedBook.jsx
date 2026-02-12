@@ -14,7 +14,7 @@ export const FeaturedBook = ({ bookId }) => {
 
   return (
     <Link to={`/${lang}/books/${book.id}`} key={book.id} className="group">
-      <section className="my-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto px-6">
+      <section className="mt-20 mb-10 md:mb-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto px-6">
 
         {/* LEFT: The Book Cover with a subtle Shadow/Lift */}
         <div className="flex justify-center md:justify-end group-hover:animate-fade-in-up">

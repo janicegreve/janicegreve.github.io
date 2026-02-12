@@ -5,6 +5,7 @@ import { SocialLinks } from "../components/SocialLinks"
 import { useTranslation } from 'react-i18next';
 import { FunkySection } from '../components/FunkySection';
 import { Mailbox } from 'lucide-react';
+import { BookCarousel } from '../components/BookCarousel';
 
 export const Home = () => {
   const { t } = useTranslation();
@@ -27,7 +28,7 @@ export const Home = () => {
         </p>
       </section>
 
-      <div className="pt-4 pb-30">
+      <div className="pt-4 pb-10">
         <SocialLinks size={16} />
       </div>
 
@@ -38,6 +39,7 @@ export const Home = () => {
         linkText={t('home.aboutLink')}
         bgColor="bg-gradient-to-r from-indigo-50 to-indigo-300"
         slant="down"
+        position="top"
       >
         <img src="/janicegrevedoodle.webp" className="w-48 rotate-6 rounded-3xl hover:-rotate-6 transition-transform" alt="Sketch" />
       </FunkySection>
@@ -50,10 +52,7 @@ export const Home = () => {
         bgColor="bg-gradient-to-r from-sky-300 to-sky-50"
         slant="up"
       >
-        <div className="relative group">
-          <div className="absolute inset-0 bg-indigo-200 rounded-lg rotate-6 -z-10 group-hover:rotate-12 transition-transform" />
-          <img src="/covers/ava-jones.webp" className="w-56 shadow-xl" alt="Books" />
-        </div>
+        <BookCarousel />
       </FunkySection>
 
       <FunkySection
@@ -64,8 +63,8 @@ export const Home = () => {
         bgColor="bg-gradient-to-r from-zinc-50 to-zinc-300"
         slant="down"
       >
-        <div className="text-white font-emilys-candy text-4xl border-4 border-indigo-400 p-8 -rotate-6 transition-transform hover:scale-125 hover:rotate-6">
-          Latest Notes
+        <div className="text-stone-800 font-emilys-candy text-4xl border-4 border-indigo-400 p-8 -rotate-6 transition-transform hover:scale-125 hover:rotate-6">
+          {t('home.blogLatest')}
         </div>
       </FunkySection>
 
@@ -76,6 +75,8 @@ export const Home = () => {
         linkText={t('home.newsletterLink')}
         bgColor="bg-gradient-to-r from-amber-300 to-amber-50"
         slant="none"
+        position="bottom"
+        sectionClass="pb-12"
       >
         <div className="p-4 bg-amber-400 rounded-3xl rotate-4 transition-transform hover:rotate-8">
           <Mailbox size={150} color="black" fill="white" className="transition-transform hover:-rotate-16" />

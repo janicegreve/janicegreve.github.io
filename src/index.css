@@ -37,9 +37,3 @@
 @utility slant-up {
   clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
 }
-
-/* Add a little extra padding to ensure content doesn't get "clipped" by the slant */
-.funky-container {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
