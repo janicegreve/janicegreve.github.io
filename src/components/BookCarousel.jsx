@@ -3,6 +3,7 @@ import Autoplay from 'embla-carousel-autoplay'
 import { getBooks } from '../utils/bookLoader'
 import { useParams, Link } from 'react-router'
 import { BookTitle } from './BookTitle'
+import { DynamicIcon } from './DynamicIcon'
 
 export const BookCarousel = () => {
   const { lang } = useParams()
@@ -23,7 +24,11 @@ export const BookCarousel = () => {
                 <img src={book.cover} alt={book.title} className="w-full h-full object-cover" />
               </div>
               <div className="absolute -top-4 -left-4 text-4xl opacity-0 group-hover:opacity-100 group-hover:scale-125 transition-all duration-500 z-0">
-                ✨
+                <DynamicIcon
+                  name={book.icon}
+                  color={book.iconColor}
+                  className="w-12 h-12 drop-shadow-[4px_4px_3px_rgba(0,0,0,0.6)]"
+                />
               </div>
               <div className="mt-4">
                 <BookTitle book={book} textClass="text-lg sm:text-base md:text-[9px] lg:text-[8px] text-slate-900" />

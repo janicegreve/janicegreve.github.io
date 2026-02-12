@@ -41,7 +41,9 @@
         "amazonUS": "https://www.amazon.com/Ava-Jones-Beginning-Janice-Greve/dp/B0G5LF1H59",
         "amazonDE": "https://www.amazon.de/-/en/Janice-Greve/dp/B0G5LF1H59",
         "amazonUK": "https://www.amazon.co.uk/Ava-Jones-Beginning-Janice-Greve/dp/B0G5LF1H59"
-      }
+      },
+      "icon": "Wine",
+      "iconColor": "#FF007F"
     },
     "da": {
       "tagline": "Nogle gange er kærligheden tættere på end man tror.",
@@ -77,7 +79,9 @@
       "cover": "/covers/en/lunas-story.webp",
       "cover3d": "/covers/en-placeholder-3d.webp",
       "reviews": [],
-      "links": {}
+      "links": {},
+      "icon": "Coffee",
+      "iconColor": "#6F4E37"
     },
     "da": {
       "tagline": "At åbne en café var hendes plan. At forelske sig i altmuligmanden var ikke.",
