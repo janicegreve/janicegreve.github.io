@@ -1,21 +1,26 @@
+import { useParams, Link } from 'react-router'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
+import AutoHeight from 'embla-carousel-auto-height'
 import { getBooks } from '../utils/bookLoader'
-import { useParams, Link } from 'react-router'
 import { BookTitle } from './BookTitle'
 import { DynamicIcon } from './DynamicIcon'
 
 export const BookCarousel = () => {
-  const { lang } = useParams()
-  const books = getBooks(lang)
+  const { lang } = useParams();
+  const books = getBooks(lang);
   const [emblaRef] = useEmblaCarousel({
     align: 'start',
     loop: true,
     skipSnaps: false
-  }, [Autoplay()])
+  },
+  [
+    Autoplay(),
+    AutoHeight()
+  ]);
 
   return (
-    <div className="embla cursor-grab active:cursor-grabbing" ref={emblaRef} key={`${lang}-${books.length}`}>
+    <div className="embla cursor-grab active:cursor-grabbing" ref={emblaRef}>
       <div className="embla__container flex gap-8 ml-6">
         {books.map((book) => (
           <div className="embla__slide relative group flex-[0_0_80%] sm:flex-[0_0_40%] lg:flex-[0_0_25%]" key={book.id}>
@@ -38,5 +43,5 @@ export const BookCarousel = () => {
         ))}
       </div>
     </div>
-  )
+  );
 }
