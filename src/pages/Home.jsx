@@ -23,7 +23,7 @@ export const Home = () => {
           Janice Greve
         </h1>
 
-        <p className="text-center mt-4 text-slate-500 uppercase tracking-[0.5em] text-sm md:text-base">
+        <p className="text-center mt-4 text-slate-500 uppercase tracking-[0.5em] indent-[0.5em] text-sm md:text-base">
           {t('home.authorDescription')}
         </p>
       </section>
