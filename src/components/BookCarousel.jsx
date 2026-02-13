@@ -15,7 +15,7 @@ export const BookCarousel = () => {
   }, [Autoplay()])
 
   return (
-    <div className="embla cursor-grab active:cursor-grabbing" ref={emblaRef}>
+    <div className="embla cursor-grab active:cursor-grabbing" ref={emblaRef} key={`${lang}-${books.length}`}>
       <div className="embla__container flex gap-8 ml-6">
         {books.map((book) => (
           <div className="embla__slide relative group flex-[0_0_80%] sm:flex-[0_0_40%] lg:flex-[0_0_25%]" key={book.id}>
