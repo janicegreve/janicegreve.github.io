@@ -1,4 +1,6 @@
+import { useEffect, useLayoutEffect } from 'react'
 import { useParams, Link } from 'react-router'
+import clsx from 'clsx'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import AutoHeight from 'embla-carousel-auto-height'
@@ -9,7 +11,7 @@ import { DynamicIcon } from './DynamicIcon'
 export const BookCarousel = () => {
   const { lang } = useParams();
   const books = getBooks(lang);
-  const [emblaRef] = useEmblaCarousel({
+  const [emblaRef, emblaApi] = useEmblaCarousel({
     align: 'start',
     loop: true,
     skipSnaps: false
@@ -19,16 +21,43 @@ export const BookCarousel = () => {
     AutoHeight()
   ]);
 
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'visible' && emblaApi) {
+        emblaApi.reInit();
+      }
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    return () => document.removeEventListener('visibilitychange', handleVisibilityChange);
+  }, [emblaApi]);
+
+  useLayoutEffect(() => {
+    if (emblaApi) {
+      emblaApi.reInit();
+    }
+  }, [emblaApi]);
+
   return (
     <div className="embla cursor-grab active:cursor-grabbing" ref={emblaRef}>
       <div className="embla__container flex gap-8 ml-6">
         {books.map((book) => (
-          <div className="embla__slide relative group flex-[0_0_80%] sm:flex-[0_0_40%] lg:flex-[0_0_25%]" key={book.id}>
+          <div
+            key={book.id}
+            className={clsx(
+              "embla__slide relative group",
+              "flex-[0_0_80%] min-w-[80%] max-w-[80%]",
+              "sm:flex-[0_0_40%] sm:min-w-[40%] sm:max-w-[40%]",
+              "lg:flex-[0_0_25%] lg:min-w-[25%] lg:max-w-[25%]",
+            )}>
             <Link to={`/${lang}/books/${book.id}`} className="">
               <div className="relative overflow-hidden rounded-2xl shadow-xl">
                 <img src={book.cover} alt={book.title} className="w-full h-full object-cover" />
               </div>
-              <div className="absolute -top-4 -left-4 text-4xl opacity-0 group-hover:opacity-100 group-hover:scale-125 transition-all duration-500 z-0">
+              <div className={clsx(
+                "absolute -top-4 -left-4 text-4xl opacity-0 z-0",
+                "group-hover:opacity-100 group-hover:scale-125 transition-all duration-500"
+              )}>
                 <DynamicIcon
                   name={book.icon}
                   color={book.iconColor}
