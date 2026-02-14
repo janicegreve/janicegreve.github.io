@@ -27,9 +27,19 @@ export const BookCarousel = () => {
         emblaApi.reInit();
       }
     };
-
     document.addEventListener('visibilitychange', handleVisibilityChange);
-    return () => document.removeEventListener('visibilitychange', handleVisibilityChange);
+
+    var timeout;
+    if (emblaApi) {
+      timeout = setTimeout(() => {
+        emblaApi.reInit();
+      }, 100); 
+    }
+
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+      if (timeout) clearTimeout(timeout);
+    }
   }, [emblaApi]);
 
   useLayoutEffect(() => {
@@ -45,11 +55,13 @@ export const BookCarousel = () => {
           <div
             key={book.id}
             className={clsx(
-              "embla__slide relative group",
+              "embla__slide relative group min-w-0",
               "flex-[0_0_80%] min-w-[80%] max-w-[80%]",
               "sm:flex-[0_0_40%] sm:min-w-[40%] sm:max-w-[40%]",
               "lg:flex-[0_0_25%] lg:min-w-[25%] lg:max-w-[25%]",
-            )}>
+            )}
+            style={{ contain: 'layout' }}
+          >
             <Link to={`/${lang}/books/${book.id}`} className="">
               <div className="relative overflow-hidden rounded-2xl shadow-xl">
                 <img src={book.cover} alt={book.title} className="w-full h-full object-cover" />
