@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect } from 'react'
+import { useEffect, useLayoutEffect, useRef } from 'react'
 import { useParams, Link } from 'react-router'
 import clsx from 'clsx'
 import useEmblaCarousel from 'embla-carousel-react'
@@ -11,6 +11,7 @@ import { DynamicIcon } from './DynamicIcon'
 export const BookCarousel = () => {
   const { lang } = useParams();
   const books = getBooks(lang);
+  const lastWakeTime = useRef(0);
   const [emblaRef, emblaApi] = useEmblaCarousel({
     align: 'start',
     loop: true,
@@ -27,18 +28,25 @@ export const BookCarousel = () => {
       timeout = setTimeout(() => { emblaApi.reInit(); }, 100); 
     }
 
-    const handleVisibilityChange = () => {
+    const onWake = () => {
+      const now = Date.now();
+      if (now - lastWakeTime.current < 100) return;
+
       if (document.visibilityState === 'visible' && emblaApi) {
+        lastWakeTime.current = now;
         timeout = setTimeout(() => { emblaApi.reInit(); }, 100); 
       }
     };
-    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    window.addEventListener('pageshow', onWake);
+    document.addEventListener('visibilitychange', onWake);
 
     return () => {
-      document.removeEventListener('visibilitychange', handleVisibilityChange);
+      window.removeEventListener('pageshow', onWake);
+      document.removeEventListener('visibilitychange', onWake);
       if (timeout) clearTimeout(timeout);
     }
-  }, [emblaApi]);
+  }, []);
 
   useLayoutEffect(() => {
     if (emblaApi) {
