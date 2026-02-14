@@ -22,19 +22,17 @@ export const BookCarousel = () => {
   ]);
 
   useEffect(() => {
+    var timeout;
+    if (emblaApi) {
+      timeout = setTimeout(() => { emblaApi.reInit(); }, 100); 
+    }
+
     const handleVisibilityChange = () => {
       if (document.visibilityState === 'visible' && emblaApi) {
-        emblaApi.reInit();
+        timeout = setTimeout(() => { emblaApi.reInit(); }, 100); 
       }
     };
     document.addEventListener('visibilitychange', handleVisibilityChange);
-
-    var timeout;
-    if (emblaApi) {
-      timeout = setTimeout(() => {
-        emblaApi.reInit();
-      }, 100); 
-    }
 
     return () => {
       document.removeEventListener('visibilitychange', handleVisibilityChange);
