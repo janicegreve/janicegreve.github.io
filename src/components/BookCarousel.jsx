@@ -39,14 +39,18 @@ export const BookCarousel = () => {
     };
 
     window.addEventListener('pageshow', onWake);
+    window.addEventListener('load', onWake);
+    window.addEventListener('resize', onWake);
     document.addEventListener('visibilitychange', onWake);
 
     return () => {
       window.removeEventListener('pageshow', onWake);
+      window.removeEventListener('load', onWake);
+      window.removeEventListener('resize', onWake);
       document.removeEventListener('visibilitychange', onWake);
       if (timeout) clearTimeout(timeout);
     }
-  }, []);
+  }, [emblaApi]);
 
   useLayoutEffect(() => {
     if (emblaApi) {
