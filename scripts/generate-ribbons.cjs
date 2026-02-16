@@ -1,8 +1,8 @@
 const sharp = require('sharp');
 const path = require('path');
-const fs = require('fs');
 
-const rawBooks = require('../src/content/books.json');
+const { getLocalizedBooks } = require('./books.cjs');
+
 const enStrings = require('../src/i18n/locales/en.json');
 const daStrings = require('../src/i18n/locales/da.json');
 
@@ -11,18 +11,9 @@ const locales = {
   da: daStrings
 };
 
-function getLocalizedBooks(lang) {
-  return rawBooks.map(book => ({
-    id: book.id,
-    ...book['en'],
-    ...book[lang],
-  }));
-}
-
-async function generateCovers() {
-  ['en', 'da'].forEach(async (lang) => {
-    const dir = path.join(__dirname, `../public/covers/${lang}`);
-    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+exports.generateRibbons = async () => {
+  for (const lang of ['en', 'da']) {
+    const dir = path.join(__dirname, `../src/assets/generated/${lang}`);
 
     const booksToProcess = getLocalizedBooks(lang);
     for (const book of booksToProcess) {
@@ -87,23 +78,20 @@ async function generateCovers() {
 
       const ribbonSvg = Buffer.from(svgString);
 
-      const name = book.coverRaw ?? book.id;
-      const input = book.coverRaw ? `${lang}/${name}` : name;
-      const inputPath = path.join(__dirname, `../src/assets/covers-raw/${input}.png`);
-      const outputPath = path.join(dir, `${book.id}.webp`);
+      const inputPath = path.join(__dirname, `../src/assets/covers-raw/${book.coverRaw ?? book.id}.png`);
+      const outputPath = path.join(dir, `${book.id}.ribbon.png`);
 
       try {
         await sharp(inputPath)
           .composite([{ input: ribbonSvg, gravity: 'northeast' }])
-          .webp({ quality: 85 })
+          .png()
           .toFile(outputPath);
 
-        console.log(`✅ [${lang.toUpperCase()}] Generated: ${book.id}.webp`);
+        console.log(`✅ [${lang.toUpperCase()}] Generated: ${book.id}.ribbon.png`);
       } catch (err) {
-        console.error(`❌ [${lang.toUpperCase()}] Error for ${book.id}:`, err.message);
+        console.error(`❌ [${lang.toUpperCase()}] Error generating ribbon cover for ${book.id}:`, err.message);
+        throw err;
       }
     }
-  })
+  }
 }
-
-generateCovers();
