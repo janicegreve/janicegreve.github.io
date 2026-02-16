@@ -33,6 +33,7 @@ exports.generateWebP = async () => {
         await convertRaw(book);
         await convert(`${book.id}.ribbon`);
         await convert3d(`${book.id}.3d`);
+        await convert3d(`${book.id}.ribbon.3d`);
 
         console.log(`✅ [${lang.toUpperCase()}] Generated WebP files for: ${book.id}`);
       } catch (err) {

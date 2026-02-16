@@ -1,13 +1,18 @@
 import books from '../content/books.json';
 
 export const getBooks = (lang) => {
-  return books.map(book => ({
-    id: book.id,
-    cover: getCover(lang, book),
-    cover3d: getCover3d(lang, book),
-    ...book['en'],
-    ...book[lang],
-  }));
+  return books.map(book => {
+    const localizedBook = {
+      id: book.id,
+      cover: getCover(lang, book),
+      ...book['en'],
+      ...book[lang],
+    };
+
+    localizedBook.cover3d = getCover3d(lang, localizedBook);
+
+    return localizedBook;
+  });
 };
 
 export const getBookById = (lang, id) => getBooks(lang).find(b => b.id === id);
@@ -28,5 +33,6 @@ const getCover = (lang, book) => {
 }
 
 const getCover3d = (lang, book) => {
-  return new URL(`../assets/generated/${lang}/${book.id}.3d.webp`, import.meta.url).href;
+  const version = book.status === "soon" ? ".ribbon" : "";
+  return new URL(`../assets/generated/${lang}/${book.id}${version}.3d.webp`, import.meta.url).href;
 }
