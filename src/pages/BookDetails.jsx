@@ -10,7 +10,23 @@ export const BookDetails = () => {
   const { t } = useTranslation();
   const book = getBookById(lang, id);
 
+  const getRelease = (book) => {
+    const result = { text: t('bookDetails.releaseUnknown') };
+
+    if (!book.release) return result;
+
+    const release = new Date(book.release);
+    if (!release) return result;
+
+    result.text = release > Date() ? t('bookDetails.releaseIs') : t('bookDetails.releaseWas')
+    result.date = release.toLocaleDateString(lang === 'da' ? 'da-DK' : 'en-US', {year: 'numeric', month: 'long', day: 'numeric'});
+
+    return result;
+  }
+
   if (!book) return <div className="py-20 text-center">{t('bookDetails.notFound')}</div>;
+
+  const release = getRelease(book);
 
   return (
     <article className="max-w-6xl mx-auto py-12 px-6 animate-fade-in-up">
@@ -42,6 +58,17 @@ export const BookDetails = () => {
                 />
               );
             })}
+          </div>
+
+          <div>
+            <p>
+              {release.text}
+              {release.date && <span className="font-bold pl-1">{release.date}</span>}
+            </p>
+            <p>
+              {book.lang && t('bookDetails.languageText')}
+              {book.lang && <span className="font-bold pl-1">{t(`lang.${book.lang}`)}</span>}
+            </p>
           </div>
 
           {/* DYNAMIC BUY LINKS */}

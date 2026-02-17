@@ -10,14 +10,14 @@ export const getBlogPosts = (lang) => {
     .map((path) => {
       const fileContent = postFiles[path].default;
       const { attributes, body } = fm(fileContent);
-      
+
       return {
         ...attributes,
         date: attributes.date,
-        dateString: attributes.date instanceof Date 
+        dateString: attributes.date instanceof Date
           ? attributes.date.toLocaleDateString(lang === 'da' ? 'da-DK' : 'en-US', {
               year: 'numeric', month: 'long', day: 'numeric'
-            }) 
+            })
           : attributes.date,
         content: marked(body),
         slug: path.split('/').pop().replace('.md', ''),

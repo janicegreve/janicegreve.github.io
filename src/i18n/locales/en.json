@@ -29,7 +29,11 @@
   },
   "bookDetails": {
     "notFound": "Book not found.",
-    "getCopy": "Buy Here"
+    "getCopy": "Buy Here",
+    "releaseIs": "This book will be released on",
+    "releaseWas": "Publication date:",
+    "releaseUnknown": "This book does not yet have a release date.",
+    "languageText": "Language:"
   },
   "blog": {
     "title": "Janice's Blog",
@@ -69,5 +73,9 @@
       "soon": "Coming Soon",
       "new": "New Release"
     }
+  },
+  "lang": {
+    "en": "English",
+    "da": "Danish"
   }
 }

@@ -28,7 +28,12 @@
     "read": "Læs mere"
   },
   "bookDetails": {
-    "notFound": "Bogen ikke fundet."
+    "notFound": "Bogen ikke fundet.",
+    "getCopy": "Køb her",
+    "releaseIs": "Denne bog vil blive udgivet den",
+    "releaseWas": "Udgivelsesdato:",
+    "releaseUnknown": "Denne bog har endnu ikke en udgivelsesdato.",
+    "languageText": "Sprog:"
   },
   "blog": {
     "title": "Janice's Journal",
@@ -68,5 +73,9 @@
       "soon": "Kommer snart",
       "new": "Ny udgivelse"
     }
+  },
+  "lang": {
+    "en": "Engelsk",
+    "da": "Dansk"
   }
 }
