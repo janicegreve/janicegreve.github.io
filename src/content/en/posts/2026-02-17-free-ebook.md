@@ -30,7 +30,7 @@ Whether you're curled up with coffee this morning, reading on your commute, or l
 this is your moment.
 Click that link, hit "Buy now" (for free), and let's make this birthday extra special together.
 
-→ **Grab your FREE copy here:** [Ava Jones: The End And The Beginning](https://www.amazon.com/Ava-Jones-Beginning-Janice-Greve-ebook/dp/B0G5LF9NVT)
+→ **Grab your FREE copy here:** [*Ava Jones: The End And The Beginning*](https://www.amazon.com/Ava-Jones-Beginning-Janice-Greve-ebook/dp/B0G5LF9NVT)
 
 Tell your friends, your family, your book-loving neighbor, your group chat and spread the birthday cheer!
 The more people who get to experience
