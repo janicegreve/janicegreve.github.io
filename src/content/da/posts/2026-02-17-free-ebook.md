@@ -13,7 +13,7 @@ Jeg føler mig officielt fantastisk ung, og universet besluttede at give mig den
 en **3-dages GRATIS kampagne** på e-bogsversionen af ​​min bog, *Ava Jones: The End And The Beginning*!
 
 Ja, du læste rigtigt! Fra i dag kan du få din digitale kopi af *Ava Jones: The End And The Beginning* til den
-uovertrufne pris på **0,00** i
+uovertrufne pris på **nul kroner** i
 de næste tre dage. Ingen forpligtelser, ingen betingelser, bare ren fortælleglæde leveret direkte til din Kindle (eller app)!
 
 Hvis du ikke har fordybet dig i *Ava Jones: The End And The Beginning* endnu, så lad mig fortælle dig, hvorfor denne bog har sådan en
