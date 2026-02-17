@@ -2,6 +2,7 @@ import { Outlet } from 'react-router';
 import { Header } from './Header';
 import { Footer } from './Footer';
 import clsx from 'clsx';
+import { UpdateNotification } from './UpdateNotification';
 
 export const Layout = () => {
   return (
@@ -21,6 +22,8 @@ export const Layout = () => {
       </main>
 
       <Footer />
+
+      <UpdateNotification />
     </div>
   );
 }

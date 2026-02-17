@@ -7,7 +7,7 @@
     "dev": "vite",
     "prebuild": "npm run gen-images",
     "build": "vite build",
-    "postbuild": "node scripts/fix-gh-pages.cjs",
+    "postbuild": "node scripts/postbuild.cjs",
     "lint": "eslint .",
     "preview": "vite preview",
     "gen-images": "node scripts/generate-images.cjs"

@@ -13,17 +13,19 @@
 @theme {
   --font-sans: "Lora", serif;
   --font-serif: "Lora", serif;
-  
+
   --font-fredoka: "Fredoka", sans-serif;
   --font-chewy: "Chewy", display;
   --font-emilys-candy: "Emilys Candy", display;
   --font-birthstone-bounce: "Birthstone Bounce", display;
 
   --typography-body-font-family: var(--font-sans);
+
+  --animate-spin-slow: spin 3s linear infinite;
 }
 
 /* Remove border from Kit newsletter form. */
-.formkit-form[data-uid], 
+.formkit-form[data-uid],
 .formkit-form[data-uid] * {
   border: none !important;
   border-width: 0 !important;
