@@ -44,7 +44,7 @@ og at se den nå ud til nye læsere, især gratis på min fødselsdag, føles so
 
 Håber på flere eventyr, flere historier, flere fester og endnu et år med at jagte det, der gør os glade!
 
-Skål for fødselsdage, gratis bøger og alle de gode ting, der kommer vores vej! 🥂📖❤️
+Skål for fødselsdage, gratis bøger og alle de gode ting, der kommer! 🥂📖❤️
 
 Med taknemmelighed og fødselsdagsglimt,  
 Janice Greve  
