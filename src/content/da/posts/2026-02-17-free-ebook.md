@@ -46,8 +46,8 @@ Håber på flere eventyr, flere historier, flere fester og endnu et år med at j
 
 Skål for fødselsdage, gratis bøger og alle de gode ting, der kommer vores vej! 🥂📖❤️
 
-Med taknemmelighed og fødselsdagsglimt,
-Janice Greve
+Med taknemmelighed og fødselsdagsglimt,  
+Janice Greve  
 Forfatter til *Ava Jones: The End And The Beginning*
 
 P.S. Når du har downloadet, vil jeg meget gerne høre, hvad du synes. Skriv venligst en anmeldelse på Amazon,
