@@ -5,12 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "prebuild": "npm run gen-images",
+    "prebuild": "node scripts/prebuild.cjs",
     "build": "vite build",
     "postbuild": "node scripts/postbuild.cjs",
     "lint": "eslint .",
     "preview": "vite preview",
-    "gen-images": "node scripts/generate-images.cjs"
+    "gen-images": "node scripts/my-functions.cjs gen"
   },
   "dependencies": {
     "@fontsource/birthstone-bounce": "^5.2.8",
