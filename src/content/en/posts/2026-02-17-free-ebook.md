@@ -13,7 +13,7 @@ I'm officially feeling fabulously young, and the universe decided to throw me th
 a **3-day FREE promotion** on the ebook version of my book, *Ava Jones: The End And The Beginning*!
 
 Yes, you read that right! Starting today, you can grab your digital copy of *Ava Jones: The End And The Beginning* at the
-unbeatable price of **0.00** for
+unbeatable price of **free** for
 the next three days only. No strings, no catches, just pure storytelling joy delivered straight to your Kindle (or app)!
 
 If you haven't dived into *Ava Jones: The End And The Beginning* yet, let me tell you why this book holds such a
