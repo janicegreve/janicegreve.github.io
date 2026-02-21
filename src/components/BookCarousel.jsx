@@ -63,13 +63,13 @@ export const BookCarousel = () => {
   const books = getBooks(lang);
 
   return (
-    <div className="embla cursor-grab active:cursor-grabbing" ref={emblaRef}>
+    <div className="embla cursor-grab active:cursor-grabbing touch-pan-y" ref={emblaRef}>
       <div className="embla__container flex gap-8 ml-6">
         {books.map((book, index) => (
           <div
             key={book.id}
             className={clsx(
-              "embla__slide relative group min-w-0",
+              "embla__slide relative group min-w-0 transform-gpu",
               "flex-[0_0_80%] min-w-[80%] max-w-[80%]",
               "sm:flex-[0_0_40%] sm:min-w-[40%] sm:max-w-[40%]",
               "lg:flex-[0_0_25%] lg:min-w-[25%] lg:max-w-[25%]",
