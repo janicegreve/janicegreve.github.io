@@ -29,15 +29,21 @@ exports.generateRibbons = async () => {
           startColor = '00d492'; // emerald-400
           endColor = '009966'; // emerald-600
           break;
-        case 'soon':
-        case 'later':
-        case 'next':
-          startColor = '6366f1'; // indigo-500
-          endColor = '4338ca'; // indigo-700
-          break;
         case 'new':
           startColor = 'fcd34d'; // amber-300
           endColor = 'f59e0b'; // amber-500
+          break;
+        case 'soon':
+          startColor = '6366f1'; // indigo-500
+          endColor = '4338ca'; // indigo-700
+          break;
+        case 'later':
+          startColor = 'FF8300';
+          endColor = 'D65500';
+          break;
+        case 'next':
+          startColor = 'B200FF';
+          endColor = '8D00CD';
           break;
       }
 

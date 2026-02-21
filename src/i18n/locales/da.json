@@ -71,9 +71,12 @@
     "status": {
       "now": "Ude nu",
       "new": "Ny udgivelse",
-      "soon": "Kommer snart",
-      "later": "Kommer i år",
-      "next": "Næste år"
+      "soon": "Udkommer snart",
+      "later": "Udkommer i år",
+      "next": "Udkommer næste år"
+    },
+    "fontSize": {
+      "next": "22"
     }
   },
   "lang": {

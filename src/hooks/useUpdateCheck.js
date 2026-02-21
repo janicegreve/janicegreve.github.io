@@ -1,8 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export const useUpdateCheck = () => {
   const [updateAvailable, setUpdateAvailable] = useState(false);
   const [currentHash, setCurrentHash] = useState(null);
+  const lastWakeTime = useRef(0);
 
   const baseUrl = import.meta.env.BASE_URL;
 
@@ -30,18 +31,28 @@ export const useUpdateCheck = () => {
 
     const interval = setInterval(checkVersion, 10 * 60 * 1000);
 
-    const handleVisibilityChange = () => {
+    const onWake = () => {
+      const now = Date.now();
+      if (now - lastWakeTime.current < 100) return;
+
       if (document.visibilityState === 'visible') {
+        lastWakeTime.current = now;
         checkVersion();
       }
     };
-    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    window.addEventListener('pageshow', onWake);
+    window.addEventListener('load', onWake);
+    window.addEventListener('resize', onWake);
+    document.addEventListener('visibilitychange', onWake);
 
     return () => {
       clearInterval(interval);
-      document.removeEventListener('visibilitychange', handleVisibilityChange);
+      window.removeEventListener('pageshow', onWake);
+      window.removeEventListener('load', onWake);
+      window.removeEventListener('resize', onWake);
+      document.removeEventListener('visibilitychange', onWake);
     };
-    return () => clearInterval(interval);
   }, [currentHash]);
 
   return { updateAvailable, refresh: () => window.location.reload() };

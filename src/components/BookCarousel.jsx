@@ -10,12 +10,14 @@ import { DynamicIcon } from './DynamicIcon'
 
 export const BookCarousel = () => {
   const { lang } = useParams();
-  const books = getBooks(lang);
   const lastWakeTime = useRef(0);
   const [emblaRef, emblaApi] = useEmblaCarousel({
     align: 'start',
     loop: true,
-    skipSnaps: false
+    skipSnaps: false,
+    containScroll: 'trimSnaps',
+    watchDrag: true,
+    dragFree: true
   },
   [
     Autoplay(),
@@ -58,10 +60,12 @@ export const BookCarousel = () => {
     }
   }, [emblaApi]);
 
+  const books = getBooks(lang);
+
   return (
     <div className="embla cursor-grab active:cursor-grabbing" ref={emblaRef}>
       <div className="embla__container flex gap-8 ml-6">
-        {books.map((book) => (
+        {books.map((book, index) => (
           <div
             key={book.id}
             className={clsx(
@@ -69,6 +73,7 @@ export const BookCarousel = () => {
               "flex-[0_0_80%] min-w-[80%] max-w-[80%]",
               "sm:flex-[0_0_40%] sm:min-w-[40%] sm:max-w-[40%]",
               "lg:flex-[0_0_25%] lg:min-w-[25%] lg:max-w-[25%]",
+              `${index === books.length - 1 ? 'mr-8' : 'mr-0'}`
             )}
             style={{ contain: 'layout' }}
           >

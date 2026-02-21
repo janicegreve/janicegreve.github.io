@@ -100,7 +100,7 @@
         }
       ],
       "status": "later",
-      "coverRaw": "en/placeholder",
+      "coverRaw": "en/later",
       "seriesId": "aalborg-love-stories",
       "release": null,
       "tagline": "Sometimes the hardest part of starting over ... is letting someone in.",
@@ -111,7 +111,7 @@
       "iconColor": "#2421FF"
     },
     "da": {
-      "coverRaw": "da/placeholder",
+      "coverRaw": "da/later",
       "tagline": "Nogle gange er den sværeste del af at starte forfra ... at lukke nogen ind.",
       "description": []
     }
