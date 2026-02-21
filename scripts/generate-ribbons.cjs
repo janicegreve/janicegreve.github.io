@@ -20,6 +20,7 @@ exports.generateRibbons = async () => {
       if (!book.status) continue;
 
       const ribbonText = locales[lang].book.status[book.status].toUpperCase();
+      const fontSize = locales[lang].book.fontSize?.[book.status] ?? "28";
 
       var startColor = 'aaaaaa';
       var endColor = '666666';
@@ -29,6 +30,8 @@ exports.generateRibbons = async () => {
           endColor = '009966'; // emerald-600
           break;
         case 'soon':
+        case 'later':
+        case 'next':
           startColor = '6366f1'; // indigo-500
           endColor = '4338ca'; // indigo-700
           break;
@@ -65,7 +68,7 @@ exports.generateRibbons = async () => {
               y="68"
               fill="white"
               font-family="sans-serif"
-              font-size="28"
+              font-size="${fontSize}"
               text-anchor="middle"
               dominant-baseline="middle"
               letter-spacing="4"

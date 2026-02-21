@@ -70,8 +70,10 @@
   "book": {
     "status": {
       "now": "Ude nu",
+      "new": "Ny udgivelse",
       "soon": "Kommer snart",
-      "new": "Ny udgivelse"
+      "later": "Kommer i år",
+      "next": "Næste år"
     }
   },
   "lang": {

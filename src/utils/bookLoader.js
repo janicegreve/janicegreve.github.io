@@ -4,6 +4,7 @@ export const getBooks = (lang) => {
   return books.map(book => {
     const localizedBook = {
       id: book.id,
+      excludeBook: book.excludeBook,
       ...book['en'],
       ...book[lang],
     };
@@ -12,7 +13,8 @@ export const getBooks = (lang) => {
     localizedBook.cover3d = getCover3d(lang, localizedBook);
 
     return localizedBook;
-  });
+  })
+  .filter(book => !book.excludeBook);
 };
 
 export const getBookById = (lang, id) => getBooks(lang).find(b => b.id === id);
@@ -34,6 +36,6 @@ const getCover = (lang, book) => {
 }
 
 const getCover3d = (lang, book) => {
-  const version = book.showRibbon === false || book.status !== "soon" ? "" : ".ribbon";
+  const version = book.showRibbon === false || ["now", "new"].includes(book.status) ? "" : ".ribbon";
   return new URL(`../assets/generated/${lang}/${book.id}${version}.3d.webp`, import.meta.url).href;
 }

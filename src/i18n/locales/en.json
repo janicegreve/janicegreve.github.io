@@ -70,8 +70,14 @@
   "book": {
     "status": {
       "now": "Out Now",
+      "new": "New Release",
       "soon": "Coming Soon",
-      "new": "New Release"
+      "later": "Coming This Year",
+      "next": "Coming Next Year"
+    },
+    "fontSize": {
+      "later": "24",
+      "next": "24"
     }
   },
   "lang": {

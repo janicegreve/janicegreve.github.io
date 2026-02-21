@@ -83,5 +83,84 @@
       "tagline": "At åbne en café var hendes plan. At forelske sig i altmuligmanden var ikke.",
       "description": []
     }
+  },
+  {
+    "id": "beths-story",
+    "en": {
+      "lang": "en",
+      "title": "Beth's Story: Accepting Love",
+      "titles": [
+        {
+          "text": "Beth's Story",
+          "tailwindCss": "font-chewy text-[2.4em] leading-none"
+        },
+        {
+          "text": "Accepting Love",
+          "tailwindCss": "font-birthstone-bounce text-[1.7em]"
+        }
+      ],
+      "status": "later",
+      "coverRaw": "en/placeholder",
+      "seriesId": "aalborg-love-stories",
+      "release": null,
+      "tagline": "Sometimes the hardest part of starting over ... is letting someone in.",
+      "description": [],
+      "reviews": [],
+      "links": {},
+      "icon": "BookOpenText",
+      "iconColor": "#2421FF"
+    },
+    "da": {
+      "coverRaw": "da/placeholder",
+      "tagline": "Nogle gange er den sværeste del af at starte forfra ... at lukke nogen ind.",
+      "description": []
+    }
+  },
+  {
+    "id": "Unique book identifier",
+    "excludeBook": true,
+    "en": {
+      "lang": "en / da - book language",
+      "title": "Book Title: Book Subtitle",
+      "titles": [
+        {
+          "text": "Book Title",
+          "tailwindCss": "font-chewy text-[2.4em] leading-none"
+        },
+        {
+          "text": "Book Subtitle",
+          "tailwindCss": "font-birthstone-bounce text-[2em]"
+        }
+      ],
+      "status": "soon / new / now (out now) / later (this year) / next (year)",
+      "seriesId": "Should match one of the unique series identifiers in 'series.json'",
+      "release": "Release date in double quotes, e.g. 2025-12-17 or 'null'",
+      "tagline": "The book tagline. Keep it to one or two sentences.",
+      "description": ["An array of paragraphs"],
+      "reviews": [
+        {
+          "lang": "en",
+          "text": "English review. Will be shown first when website language is set to English.",
+          "critic": "Name of who wrote the review or place of where it appeared"
+        },
+        {
+          "lang": "da",
+          "text": "Danish review. Will be shown first when website language is set to Danish.",
+          "critic": "Name of who wrote the review or place of where it appeared"
+        }
+      ],
+      "links": {
+        "amazonUS": "The key must be one of the 'languageSpecificLinks' in 'BuyLinks.jsx'",
+        "amazonDE": "The value is the full URL e.g. https://www.amazon.com/Ava-Jones-Beginning-Janice-Greve/dp/B0G5LF1H59"
+      },
+      "icon": "lucide icon, e.g. 'Coffee', shown in some places as a hover effect for books.",
+      "iconColor": "Full hex value, e.g. #6F4E37",
+      "coverRaw": "The cover defaults to 'book.id', but an override can be specified here e.g. 'en/placeholder'",
+      "showRibbon": false
+    },
+    "da": {
+      "tagline": "Everything can be localized for Danish, but anything that is not specified here will fallback to English.",
+      "description": []
+    }
   }
 ]
