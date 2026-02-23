@@ -84,6 +84,12 @@
     "en": "English",
     "da": "Danish"
   },
+  "format": {
+    "ebook": "e-book",
+    "paperback": "paperback",
+    "hardback": "hardback",
+    "audiobook": "audiobook"
+  },
   "updateNotification": {
     "newVersion": "A new version of the website is ready!",
     "refresh": "Refresh"

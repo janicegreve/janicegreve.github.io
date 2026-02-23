@@ -2,7 +2,6 @@
   {
     "id": "ava-jones",
     "en": {
-      "lang": "en",
       "title": "Ava Jones: The End And The Beginning",
       "titles": [
         {
@@ -16,7 +15,6 @@
       ],
       "status": "new",
       "seriesId": "aalborg-love-stories",
-      "release": "2025-12-17",
       "tagline": "Sometimes love is closer than you think.",
       "description": [
         "Does anyone know what the future holds, when love is the question? Ava Jones thought life was going smoothly, until she arrived home one Tuesday. She thought her future was set; she was wrong. How could her life fall apart between breakfast and dinner? She read the note again. She tried ringing her boyfriend; gave up and opened the bottle of rosé in the fridge. At times like this, it was best to write a list. Times when you thought you might be losing your mind.",
@@ -41,7 +39,19 @@
         "amazonUK": "https://www.amazon.co.uk/Ava-Jones-Beginning-Janice-Greve/dp/B0G5LF1H59"
       },
       "icon": "Wine",
-      "iconColor": "#FF007F"
+      "iconColor": "#FF007F",
+      "publications": [
+        {
+          "lang": "en",
+          "format": "ebook",
+          "release": "2025-12-17"
+        },
+        {
+          "lang": "en",
+          "format": "paperback",
+          "release": "2026-01-07"
+        }
+      ]
     },
     "da": {
       "tagline": "Nogle gange er kærligheden tættere på end man tror.",
@@ -55,7 +65,6 @@
   {
     "id": "lunas-story",
     "en": {
-      "lang": "en",
       "title": "Luna's Story: Finding Love",
       "titles": [
         {
@@ -70,13 +79,24 @@
       "status": "soon",
       "coverRaw": "en/placeholder",
       "seriesId": "aalborg-love-stories",
-      "release": null,
       "tagline": "Opening a café was her plan. Falling for the handyman wasn't.",
       "description": [],
       "reviews": [],
       "links": {},
       "icon": "Coffee",
-      "iconColor": "#6F4E37"
+      "iconColor": "#6F4E37",
+      "publications": [
+        {
+          "lang": "en",
+          "format": "ebook",
+          "release": null
+        },
+        {
+          "lang": "en",
+          "format": "paperback",
+          "release": null
+        }
+      ]
     },
     "da": {
       "coverRaw": "da/placeholder",
@@ -87,7 +107,6 @@
   {
     "id": "beths-story",
     "en": {
-      "lang": "en",
       "title": "Beth's Story: Accepting Love",
       "titles": [
         {
@@ -102,13 +121,24 @@
       "status": "later",
       "coverRaw": "en/later",
       "seriesId": "aalborg-love-stories",
-      "release": null,
       "tagline": "Sometimes the hardest part of starting over ... is letting someone in.",
       "description": [],
       "reviews": [],
       "links": {},
       "icon": "BookOpenText",
-      "iconColor": "#2421FF"
+      "iconColor": "#2421FF",
+      "publications": [
+        {
+          "lang": "en",
+          "format": "ebook",
+          "release": null
+        },
+        {
+          "lang": "en",
+          "format": "paperback",
+          "release": null
+        }
+      ]
     },
     "da": {
       "coverRaw": "da/later",
@@ -120,7 +150,6 @@
     "id": "Unique book identifier",
     "excludeBook": true,
     "en": {
-      "lang": "en / da - book language",
       "title": "Book Title: Book Subtitle",
       "titles": [
         {
@@ -134,7 +163,6 @@
       ],
       "status": "soon / new / now (out now) / later (this year) / next (year)",
       "seriesId": "Should match one of the unique series identifiers in 'series.json'",
-      "release": "Release date in double quotes, e.g. 2025-12-17 or 'null'",
       "tagline": "The book tagline. Keep it to one or two sentences.",
       "description": ["An array of paragraphs"],
       "reviews": [
@@ -155,11 +183,18 @@
       },
       "icon": "lucide icon, e.g. 'Coffee', shown in some places as a hover effect for books.",
       "iconColor": "Full hex value, e.g. #6F4E37",
+      "publications": [
+        {
+          "lang": "en / da - book language",
+          "format": "ebook / paperback / hardback / audiobook",
+          "release": "Release date in double quotes, e.g. 2025-12-17 or 'null'"
+        }
+      ],
       "coverRaw": "The cover defaults to 'book.id', but an override can be specified here e.g. 'en/placeholder'",
       "showRibbon": false
     },
     "da": {
-      "tagline": "Everything can be localized for Danish, but anything that is not specified here will fallback to English.",
+      "tagline": "Everything can be localized for Danish, but most things do not need to be or even make sense to be. Anything that is not specified here will fallback to English.",
       "description": []
     }
   }
