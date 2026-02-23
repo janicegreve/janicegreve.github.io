@@ -24,7 +24,7 @@ export const SeriesSection = ({ currentBook, seriesId }) => {
   const series = getSeriesById(lang, seriesId);
 
   return (
-    <section className="mt-20 flex flex-col items-center">
+    <section className="mt-10 flex flex-col items-center">
       <div className="pb-4">
         <div className={clsx(
           "bg-linear-to-br from-pink-100 to-pink-300",

@@ -1,10 +1,12 @@
 import { useParams, Link } from 'react-router';
 import { useTranslation } from 'react-i18next';
+import clsx from 'clsx';
 import { getBookById } from '../utils/bookLoader';
 import { BuyLinks } from '../components/BuyLinks';
 import { SeriesSection } from '../components/SeriesSection';
 import { BookTitle } from '../components/BookTitle';
 import { PublicationDetails } from './PublicationDetails';
+import { DynamicIcon } from '../components/DynamicIcon';
 
 export const BookDetails = () => {
   const { lang, id } = useParams();
@@ -22,8 +24,18 @@ export const BookDetails = () => {
 
       <div className="mt-12 grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
         {/* LEFT: Large 3D Mockup Cover */}
-        <div className="md:col-span-5">
+        <div className="relative md:col-span-5 group">
           <img src={book.cover3d} alt={book.title} className="w-full" />
+          <div className={clsx(
+            "absolute -top-8 left-4 md:-top-4 z-0 opacity-100 sm:opacity-0",
+            "group-hover:opacity-100 group-hover:scale-125 transition-all duration-500",
+          )}>
+            <DynamicIcon
+              name={book.icon}
+              color={book.iconColor}
+              className="w-16 h-16 md:w-12 md:h-12 drop-shadow-[4px_4px_3px_rgba(0,0,0,0.6)]"
+            />
+          </div>
         </div>
 
         {/* RIGHT: Localized Content & Buy Links */}
@@ -48,12 +60,11 @@ export const BookDetails = () => {
           <PublicationDetails book={book} />
 
           {/* DYNAMIC BUY LINKS */}
-          <div className="pt-8">
-            {/* <h3 className="text-lg mb-6">{t('bookDetails.getCopy')}</h3> */}
+          {Object.keys(book.links).length > 0 &&
             <div className="flex flex-wrap gap-4">
               <BuyLinks links={book.links} />
             </div>
-          </div>
+          }
         </div>
       </div>
 
