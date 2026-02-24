@@ -11,7 +11,9 @@ export const PublicationDetails = ({book}) => {
     if ((book?.publications?.length ?? 0) === 0) return result;
 
     const releases = book.publications.filter(p => p.release !== null).map(p => new Date(p.release));
-    if (releases.length === 0) return result;
+    if (releases.length === 0) {
+      return book.status === 'soon' ? { text: t('bookDetails.releaseSoon') } : result;
+    }
 
     const release = releases[0];
     result.text = release > Date() ? t('bookDetails.releaseIs') : t('bookDetails.releaseWas')

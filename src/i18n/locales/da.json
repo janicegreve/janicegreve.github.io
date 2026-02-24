@@ -30,8 +30,9 @@
   "bookDetails": {
     "notFound": "Bogen ikke fundet.",
     "getCopy": "Køb her",
-    "releaseIs": "Denne bog vil blive udgivet den",
     "releaseWas": "Udgivelsesdato:",
+    "releaseIs": "Denne bog vil blive udgivet den",
+    "releaseSoon": "Denne bog får snart en udgivelsesdato.",
     "releaseUnknown": "Denne bog har endnu ikke en udgivelsesdato.",
     "languageText": "Sprog:"
   },

@@ -30,8 +30,9 @@
   "bookDetails": {
     "notFound": "Book not found.",
     "getCopy": "Buy Here",
-    "releaseIs": "This book will be released on",
     "releaseWas": "Publication date:",
+    "releaseIs": "This book will be released on",
+    "releaseSoon": "This book will soon get a release date.",
     "releaseUnknown": "This book does not yet have a release date.",
     "languageText": "Language:"
   },
