@@ -1,4 +1,5 @@
 import { useParams, Link } from 'react-router';
+import { preload } from 'react-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import clsx from 'clsx';
@@ -13,9 +14,16 @@ export const BookCarousel = () => {
   const { lang } = useParams();
   const books = getBooks(lang);
 
+  for (const book of books) {
+    preload(book.cover, { as: 'image', fetchPriority: 'high' });
+  }
+
   return (
     <div className="w-full min-w-0 h-full">
       <Swiper
+        observer={true}
+        observeParents={true}
+        watchSlidesProgress={true}
         modules={[Autoplay, Pagination]}
         spaceBetween={20}
         slidesPerView={1.4}
