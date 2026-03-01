@@ -77,10 +77,13 @@
         }
       ],
       "status": "soon",
-      "coverRaw": "en/placeholder",
       "seriesId": "aalborg-love-stories",
       "tagline": "Opening a café was her plan. Falling for the handyman wasn't.",
-      "description": [],
+      "description": [
+        "Luna's life, up until this point, hadn't been her own. A chaotic childhood, responsibilities from a young age, and more new starts than she could count.",
+        "At the age of thirty-four, Luna is finally free to make her own decisions and choose her path. She decides to buy a little house in Aalborg, open her own café, and maybe even find love. Luna's best friend Ella convinces her to try a dating app. Ella is adamant hanging around the vegetables aisle in supermarkets isn't a thing these days. To Luna, the idea is exciting and terrifying, in equal measure! Things might go smoother if a certain estate agent hadn't set his sights on Luna. Then there's her handyman. The extremely dishy Adam, who seems to continually put his foot in it, ending up red-faced in Luna's company. Unfortunately, in the words of every country song ever written, he's 'somebody else's guy!'",
+        "Join Luna as she navigates miscommunications, curveballs, and a string of coffee dates on her way to finding love."
+      ],
       "reviews": [],
       "links": {},
       "icon": "Coffee",
@@ -99,9 +102,12 @@
       ]
     },
     "da": {
-      "coverRaw": "da/placeholder",
       "tagline": "At åbne en café var hendes plan. At forelske sig i altmuligmanden var ikke.",
-      "description": []
+      "description": [
+        "Lunas liv havde indtil dette punkt ikke været hendes eget. En kaotisk barndom, ansvar fra en ung alder og flere nye begyndelser, end hun kunne tælle.",
+        "I en alder af 34 er Luna endelig fri til at træffe sine egne beslutninger og vælge sin vej. Hun beslutter sig for at købe et lille hus i Aalborg, åbne sin egen café og måske endda finde kærligheden. Lunas bedste veninde Ella overtaler hende til at prøve en dating app. Ella mener ikke, at det at gå rundt i grøntsagsafdelingen i supermarkedet virker længere. For Luna er ideen spændende og skræmmende i lige mål! Tingene kunne være gået glattere, hvis en bestemt ejendomsmægler ikke havde fået øje på Luna. Så er der hendes altmuligmand. Den ekstremt dejlige Adam, der konstant synes at jokke i spinaten og ende med at blive rød i ansigtet i Lunas selskab. Desværre, som ordene i enhver countrysang, der nogensinde er skrevet, er han 'en andens fyr!'",
+        "Følg Luna, når hun navigerer gennem misforståelser, uventede begivenheder og en række kaffe dates på sin vej til at finde kærligheden."
+    ]
     }
   },
   {
@@ -195,7 +201,8 @@
     },
     "da": {
       "tagline": "Everything can be localized for Danish, but most things do not need to be or even make sense to be. Anything that is not specified here will fallback to English.",
-      "description": []
+      "description": [],
+      "coverRaw": "A Danish override to the English override can be specified here e.g. 'da/placeholder'"
     }
   }
 ]
