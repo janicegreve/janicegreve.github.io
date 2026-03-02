@@ -5,7 +5,7 @@ import { getBookById } from '../utils/bookLoader';
 import { BuyLinks } from '../components/BuyLinks';
 import { SeriesSection } from '../components/SeriesSection';
 import { BookTitle } from '../components/BookTitle';
-import { PublicationDetails } from './PublicationDetails';
+import { PublicationDetails } from '../components/PublicationDetails';
 import { DynamicIcon } from '../components/DynamicIcon';
 
 export const BookDetails = () => {
