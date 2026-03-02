@@ -3,7 +3,7 @@ import { useLocation } from "react-router";
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { NavLinks } from '../utils/NavLinks';
+import { NavLinks } from './NavLinks';
 import { LanguageSwitcher } from './LanguageSwitcher';
 
 export const Navbar = () => {
