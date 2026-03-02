@@ -14,7 +14,7 @@ export const Blog = () => {
       <h1 className="text-5xl mb-12 text-center">
         {t('blog.title')}
       </h1>
-      
+
       <div className="grid gap-8">
         {posts.map((post) => (
           <motion.article
@@ -23,7 +23,7 @@ export const Blog = () => {
             whileHover={{ y: -4, borderColor: "var(--color-indigo-200)" }}
             onClick={() => navigate(`/${lang}/blog/${post.slug}`)}
             className="
-              group cursor-pointer p-8 
+              group cursor-pointer p-8
               bg-white border border-slate-100 rounded-2xl shadow-sm
               transition-colors hover:bg-slate-50/80
               relative flex flex-col space-y-4

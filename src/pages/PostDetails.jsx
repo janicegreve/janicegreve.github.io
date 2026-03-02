@@ -19,7 +19,7 @@ export const PostDetails = () => {
       <Link to={`/${lang}/blog`} className="text-indigo-600 text-sm uppercase tracking-widest">
         ← {t('blogDetails.back')}
       </Link>
-      
+
       <header className="mt-8 mb-12">
         <h1 className="text-4xl text-slate-900">{post.title}</h1>
         <p className="text-slate-400 mt-4">{post.dateString}</p>
@@ -28,14 +28,14 @@ export const PostDetails = () => {
         </span>
       </header>
 
-      {/* 
+      {/*
           DANGEROUSLY SET INNER HTML:
           This renders the 'post.content' string as actual HTML.
           We use Tailwind's 'prose' class to style the raw HTML tags automatically.
       */}
-      <div 
+      <div
         className="prose prose-lg md:prose-xl max-w-none text-justify"
-        dangerouslySetInnerHTML={{ __html: post.content }} 
+        dangerouslySetInnerHTML={{ __html: post.content }}
       />
     </article>
   );

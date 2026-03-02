@@ -43,7 +43,7 @@ export const SeriesSection = ({ currentBook, seriesId }) => {
               <p
                 key={index}
                 className={`text-justify leading-7 md:leading-10 text-lg md:text-xl drop-shadow-sm ${index > 0 ? "indent-6" : ""}`}
-                dangerouslySetInnerHTML={{ __html: paragraph }} 
+                dangerouslySetInnerHTML={{ __html: paragraph }}
               />
             );
           })}
@@ -62,7 +62,7 @@ export const SeriesSection = ({ currentBook, seriesId }) => {
             className="group block text-center"
           >
             <div className="relative overflow-hidden rounded-lg shadow-md transition-transform group-hover:-translate-y-2">
-              <img 
+              <img
                 src={book.cover}
                 alt={book.title}
                 className="w-full h-full object-cover"

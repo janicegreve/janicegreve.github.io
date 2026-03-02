@@ -17,7 +17,7 @@ export const BuyLinks = ({ links }) => {
   );
 
   return visiblePlatforms.map(platform => (
-    <a 
+    <a
       key={platform}
       href={links[platform]}
       target="_blank"

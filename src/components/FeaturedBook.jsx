@@ -18,12 +18,12 @@ export const FeaturedBook = ({ bookId }) => {
 
         {/* LEFT: The Book Cover with a subtle Shadow/Lift */}
         <div className="flex justify-center md:justify-end group-hover:animate-fade-in-up">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <img 
+            <img
               src={book.cover}
               alt={book.title}
               className="w-64 md:w-80 rounded-lg shadow-2xl transition-transform duration-500 group-hover:scale-105"

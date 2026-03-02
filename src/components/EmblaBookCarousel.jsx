@@ -27,7 +27,7 @@ export const BookCarousel = () => {
   useEffect(() => {
     var timeout;
     if (emblaApi) {
-      timeout = setTimeout(() => { emblaApi.reInit(); }, 100); 
+      timeout = setTimeout(() => { emblaApi.reInit(); }, 100);
     }
 
     const onWake = () => {
@@ -36,7 +36,7 @@ export const BookCarousel = () => {
 
       if (document.visibilityState === 'visible' && emblaApi) {
         lastWakeTime.current = now;
-        timeout = setTimeout(() => { emblaApi.reInit(); }, 100); 
+        timeout = setTimeout(() => { emblaApi.reInit(); }, 100);
       }
     };
 

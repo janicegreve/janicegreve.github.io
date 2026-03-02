@@ -7,9 +7,9 @@ export const SocialList = () => {
       {socialLinks.map((social) => {
         return (
           <li key={social.name}>
-            <a 
-              href={social.href} 
-              target="_blank" 
+            <a
+              href={social.href}
+              target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 group text-slate-600 hover:text-indigo-600 transition-colors"
             >
