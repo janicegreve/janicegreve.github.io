@@ -84,7 +84,7 @@ export const Home = () => {
       </FunkySection>
 
       <div>
-        <FeaturedBook bookId={'ava-jones'} />
+        <FeaturedBook bookId={'lunas-story'} />
       </div>
     </div>
   )
