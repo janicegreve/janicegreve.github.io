@@ -85,7 +85,11 @@
         "Join Luna as she navigates miscommunications, curveballs, and a string of coffee dates on her way to finding love."
       ],
       "reviews": [],
-      "links": {},
+      "links": {
+        "amazonUS": "https://www.amazon.com/gp/product/B0GTFCRG1K",
+        "amazonDE": "https://www.amazon.de/gp/product/B0GTFCRG1K",
+        "amazonUK": "https://www.amazon.co.uk/gp/product/B0GTFCRG1K"
+      },
       "icon": "Coffee",
       "iconColor": "#6F4E37",
       "publications": [
