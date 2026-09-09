@@ -128,15 +128,63 @@
           "tailwindCss": "font-birthstone-bounce text-[1.7em]"
         }
       ],
-      "status": "later",
-      "coverRaw": "en/later",
+      "status": "soon",
       "seriesId": "aalborg-love-stories",
       "tagline": "Sometimes the hardest part of starting over ... is letting someone in.",
-      "description": [],
+      "description": [
+        "After years of living with Paul's cruelty, Beth can take no more. With her family's help, she escapes, leaving the police a letter explaining her sudden disappearance.",
+        "Overwhelmed with guilt, broken, and terrified she will do something wrong, Beth starts her new life in Aalborg, Denmark. Every decision and social encounter is a fraught internal battle, with sometimes hilarious consequences. She wrestles with feelings of unworthiness, but as time passes, glimpses of her old self break through. She makes new friends and meets a kind, patient man. Accepting moments of genuine happiness, she allows herself to hope she can be whole again.",
+        "When the past comes knocking, Beth is sent spiralling into despair. Can she survive and embrace the new future stretching before her? Is she capable of accepting love?"
+      ],
       "reviews": [],
       "links": {},
       "icon": "BookOpenText",
       "iconColor": "#2421FF",
+      "publications": [
+        {
+          "lang": "en",
+          "format": "ebook",
+          "release": "2026-09-30"
+        },
+        {
+          "lang": "en",
+          "format": "paperback",
+          "release": "2026-09-30"
+        }
+      ]
+    },
+    "da": {
+      "tagline": "Nogle gange er den sværeste del af at starte forfra ... at lukke nogen ind.",
+      "description": [
+        "Efter i årevis at have levet med Pauls grusomhed kan Beth ikke mere. Med sin families hjælp flygter hun og efterlader et brev til politiet, der forklarer hendes pludselige forsvinden.",
+        "Overvældet af skyldfølelse, knust og rædselsslagen for at gøre noget forkert begynder Beth et nyt liv i Aalborg. Hver eneste beslutning og sociale kontakt er en anstrengende indre kamp, hvilket til tider fører til komiske situationer. Hun kæmper med en følelse af ikke at være god nok, men som tiden går, begynder glimt af hendes gamle jeg at bryde igennem. Hun får nye venner og møder en venlig og tålmodig mand. Hun lærer at tage imod øjeblikke af ægte lykke og tillader sig selv at håbe på, at hun kan blive hel igen.",
+        "Da fortiden banker på, kastes Beth ud i dyb fortvivlelse. Kan hun klare det og omfavne den nye fremtid, der venter hende? Er hun i stand til at tage imod kærligheden?"
+      ]
+    }
+  },
+  {
+    "id": "mias-story",
+    "en": {
+      "title": "Mia's Story: Love Unexpected",
+      "titles": [
+        {
+          "text": "Mia's Story",
+          "tailwindCss": "font-chewy text-[2.4em] leading-none"
+        },
+        {
+          "text": "Love Unexpected",
+          "tailwindCss": "font-birthstone-bounce text-[1.5em]"
+        }
+      ],
+      "status": "later",
+      "coverRaw": "en/later",
+      "seriesId": "aalborg-love-stories",
+      "tagline": "She annoyed him. He intrigued her. Neither saw love coming.",
+      "description": [],
+      "reviews": [],
+      "links": {},
+      "icon": "Music",
+      "iconColor": "#FFC0CB",
       "publications": [
         {
           "lang": "en",
@@ -152,7 +200,7 @@
     },
     "da": {
       "coverRaw": "da/later",
-      "tagline": "Nogle gange er den sværeste del af at starte forfra ... at lukke nogen ind.",
+      "tagline": "Hun irriterede ham. Han vakte hendes nysgerrighed. Ingen af dem så kærligheden komme.",
       "description": []
     }
   },
@@ -191,7 +239,7 @@
         "amazonUS": "The key must be one of the 'languageSpecificLinks' in 'BuyLinks.jsx'",
         "amazonDE": "The value is the full URL e.g. https://www.amazon.com/Ava-Jones-Beginning-Janice-Greve/dp/B0G5LF1H59"
       },
-      "icon": "lucide icon, e.g. 'Coffee', shown in some places as a hover effect for books.",
+      "icon": "lucide icon, e.g. 'Coffee', shown in some places as a hover effect for books. https://lucide.dev/icons/",
       "iconColor": "Full hex value, e.g. #6F4E37",
       "publications": [
         {
